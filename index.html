@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Branding & Packaging Agency HTML Template">
+    <title>BrandStudio - Creative Branding & Packaging Agency | Logo & Design Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/Logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-colors.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light-custom shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                <span class="fs-4 fw-bold text-primary">BrandStudio</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="index.html">Home 1 (Creative)</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2 (Digital)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0">
+                        <i class="bi bi-moon-fill fs-5"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-link text-dark p-0 border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="admin/admin.html"><i class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="bi bi-person-plus me-2"></i>Get Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section d-flex align-items-center position-relative overflow-hidden"
+        style="min-height: 90vh; padding-top: 80px;">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-10">
+                    <span class="text-uppercase text-secondary fw-bold letter-spacing-2 mb-3 d-block">Award Winning
+                        Agency</span>
+                    <h1 class="display-3 fw-bold mb-4">Crafting Brands That <span class="text-primary">Stand Out</span>
+                    </h1>
+                    <p class="lead mb-5 text-muted w-75 mx-auto">We specialize in strategic branding and premium
+                        packaging design
+                        that connects with your audience and drives growth.</p>
+                    <div class="d-flex gap-3 justify-content-center mb-5">
+                        <a href="services.html" class="btn btn-primary-custom btn-lg">Our Services</a>
+                        <a href="portfolio.html" class="btn btn-outline-dark btn-lg">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="position-relative">
+                        <div class="rounded-4 overflow-hidden shadow-lg p-3 bg-light-custom">
+                            <img src="hero_packaging_mockup_1769019466165.png"
+                                class="img-fluid w-100 rounded-3 object-fit-cover" alt="Premium Packaging Mockup"
+                                style="max-height: 600px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About / Brands Section -->
+    <section class="py-5 border-top border-bottom bg-light-custom">
+        <div class="container">
+            <p class="text-center text-muted mb-4 text-uppercase small">Trusted by innovative companies</p>
+            <div class="text-center opacity-75 grayscale-hover transition-all">
+                <img src="client_logo_strip_1769049971316.png" class="img-fluid" style="max-height: 50px;"
+                    alt="Trusted Clients">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section-padding overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="rounded-4 overflow-hidden shadow-lg position-relative mx-auto" style="max-width: 90%;">
+                        <img src="office_culture_modern_1769050012077.png" class="img-fluid w-100 object-fit-cover"
+                            alt="Our Studio" style="max-height: 500px;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-to-t"
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <p class="text-white mb-0 fw-medium">"Where creativity meets strategy."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-2 d-block">Who We Are</span>
+                    <h2 class="display-5 fw-bold mb-4">We are a team of <span class="text-secondary">dreamers &
+                            doers</span>.</h2>
+                    <p class="lead text-muted mb-4">BrandStudio isn't just an agency; we're your creative partners. We
+                        believe that great design is born from collaboration, deep understanding, and a willingness to
+                        push boundaries.</p>
+                    <p class="text-muted mb-4">Our team consists of award-winning designers, strategists, and developers
+                        who are passionate about building brands that leave a lasting legacy. From the initial sketch to
+                        the final launch, we are with you every step of the way.</p>
+                    <a href="about.html" class="btn btn-outline-primary btn-lg">Meet the Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="text-primary text-uppercase fw-bold mb-2 d-block">What We Do</span>
+                    <h2 class="display-5 mb-3">Holistic Design Solutions</h2>
+                    <p class="text-muted">From concept to shelf, we handle every aspect of your brand's visual identity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-up transition-all">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box text-primary bg-light-custom rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-bezier2 fs-3"></i>
+                            </div>
+                            <h3 class="mb-0 ms-3">Brand Strategy</h3>
+                        </div>
+                        <p class="text-muted mb-4">We define your brand's voice, mission, and positioning to ensure
+                            consistency across all touchpoints.</p>
+                        <a href="contact.html" class="text-primary fw-bold text-decoration-none"
+                            style="text-align: center;">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-up transition-all">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box text-primary bg-light-custom rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-box-seam fs-3"></i>
+                            </div>
+                            <h3 class="mb-0 ms-3">Packaging Design</h3>
+                        </div>
+                        <p class="text-muted mb-4">Premium, sustainable, and shelf-popping packaging designs that tell
+                            your product's story.</p>
+                        <a href="contact.html" class="text-primary fw-bold text-decoration-none"
+                            style="text-align: center;">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-up transition-all">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box text-primary bg-light-custom rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width: 60px; height: 60px;">
+                                <i class="bi bi-palette fs-3"></i>
+                            </div>
+                            <h3 class="mb-0 ms-3">Visual Identity</h3>
+                        </div>
+                        <p class="text-muted mb-4">Logo design, color palettes, and typography that create a memorable
+                            visual language.</p>
+                        <a href="contact.html" class="text-primary fw-bold text-decoration-none"
+                            style="text-align: center;">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-2 d-block">How We Work</span>
+                <h2 class="display-5 fw-bold mb-5">Our Creative Process</h2>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm mb-4 text-primary"
+                        style="width: 80px; height: 80px;">
+                        <i class="bi bi-search fs-3"></i>
+                    </div>
+                    <h4>Discovery</h4>
+                    <p class="text-muted small">We analyze your market, competitors, and target audience to find the
+                        whitespace.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm mb-4 text-primary"
+                        style="width: 80px; height: 80px;">
+                        <i class="bi bi-lightbulb fs-3"></i>
+                    </div>
+                    <h4>Strategy</h4>
+                    <p class="text-muted small">We define your brand positioning and visual direction before drawing a
+                        line.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm mb-4 text-primary"
+                        style="width: 80px; height: 80px;">
+                        <i class="bi bi-pencil-square fs-3"></i>
+                    </div>
+                    <h4>Design</h4>
+                    <p class="text-muted small">We craft pixel-perfect packaging and identity systems that tell your
+                        story.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm mb-4 text-primary"
+                        style="width: 80px; height: 80px;">
+                        <i class="bi bi-rocket-takeoff fs-3"></i>
+                    </div>
+                    <h4>Launch</h4>
+                    <p class="text-muted small">We prepare print-ready files and guidelines to ensure a flawless
+                        rollout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Specializations Section -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-2 d-block">Industry Expertise</span>
+                <h2 class="display-5 fw-bold mb-3">Specialized Solutions for Your Market</h2>
+                <p class="text-muted">Deep industry knowledge that drives category-defining results</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-4 h-100 hover-up transition-all">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-droplet fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Beauty & Cosmetics</h5>
+                        <p class="text-muted small mb-3">Luxury packaging for skincare, makeup, and personal care brands that command premium positioning.</p>
+                        <ul class="text-start small text-muted">
+                            <li>• Sustainable materials</li>
+                            <li>• Premium finishes</li>
+                            <li>• Regulatory compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-4 h-100 hover-up transition-all">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-cup-hot fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Food & Beverage</h5>
+                        <p class="text-muted small mb-3">Eye-catching packaging that drives shelf impact and communicates quality ingredients.</p>
+                        <ul class="text-start small text-muted">
+                            <li>• Food-safe materials</li>
+                            <li>• Shelf optimization</li>
+                            <li>• Freshness indicators</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-4 h-100 hover-up transition-all">
+                        <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-laptop fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Tech & SaaS</h5>
+                        <p class="text-muted small mb-3">Brand identity and packaging for tech products that communicate innovation and reliability.</p>
+                        <ul class="text-start small text-muted">
+                            <li>• Tech-forward design</li>
+                            <li>• Component packaging</li>
+                            <li>• User experience focus</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-4 h-100 hover-up transition-all">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-heart-pulse fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Healthcare & Wellness</h5>
+                        <p class="text-muted small mb-3">Trust-building packaging for supplements, medical devices, and wellness products.</p>
+                        <ul class="text-start small text-muted">
+                            <li>• Compliance expertise</li>
+                            <li>• Patient-friendly design</li>
+                            <li>• Security features</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section-padding border-top border-bottom">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-12 text-center">
+                    <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-2 d-block">Selected
+                        Works</span>
+                    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-3">
+                        <h2 class="display-5 fw-bold mb-0 mx-auto">Recent Projects</h2>
+                        <!-- <a href="portfolio.html" class="btn btn-outline-primary position-absolute end-0 me-5 d-none d-md-block">View All Work</a> -->
+                        <!-- Centered layout requested, button might look better centered below or just omitted if not in spec, but screenshot showed it. User said "to center of the page". I will place button below grid or keep headers centered. -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="portfolio-item hover-up transition-all">
+                        <a href="portfolio-details.html" class="d-block mb-3 overflow-hidden rounded-4 shadow-sm">
+                            <img src="pack_cosmetics_1769053933835.png"
+                                class="img-fluid w-100 object-fit-cover transform-scale" alt="Aura Botanics"
+                                style="aspect-ratio: 4/3;">
+                        </a>
+                        <h5 class="fw-bold mb-1"><a href="portfolio-details.html"
+                                class="text-dark text-decoration-none">Aura Botanics</a>
+                        </h5>
+                        <p class="small text-muted">Luxury Skincare Design</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="portfolio-item hover-up transition-all">
+                        <a href="#" class="d-block mb-3 overflow-hidden rounded-4 shadow-sm">
+                            <img src="portfolio_vogue_co_1769049914702.png"
+                                class="img-fluid w-100 object-fit-cover transform-scale" alt="Vogue & Co"
+                                style="aspect-ratio: 4/3;">
+                        </a>
+                        <h5 class="fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Vogue & Co.</a></h5>
+                        <p class="small text-muted">Retail Brand Identity</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="portfolio-item hover-up transition-all">
+                        <a href="portfolio-details.html" class="d-block mb-3 overflow-hidden rounded-4 shadow-sm">
+                            <img src="pack_coffee_1769053952254.png"
+                                class="img-fluid w-100 object-fit-cover transform-scale" alt="Highland Roasters"
+                                style="aspect-ratio: 4/3;">
+                        </a>
+                        <h5 class="fw-bold mb-1"><a href="portfolio-details.html"
+                                class="text-dark text-decoration-none">Highland Roasters</a></h5>
+                        <p class="small text-muted">Artisan Coffee Packaging</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="portfolio-item hover-up transition-all">
+                        <a href="#" class="d-block mb-3 overflow-hidden rounded-4 shadow-sm">
+                            <img src="portfolio_eco_foods_1769049950091.png"
+                                class="img-fluid w-100 object-fit-cover transform-scale" alt="Eco Foods"
+                                style="aspect-ratio: 4/3;">
+                        </a>
+                        <h5 class="fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Eco Foods</a></h5>
+                        <p class="small text-muted">Packaging Design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="portfolio.html" class="btn btn-outline-primary btn-lg">View All Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Results Section -->
+    <section class="section-padding bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-uppercase fw-bold letter-spacing-2 mb-2 d-block">Proven Results</span>
+                <h2 class="display-5 fw-bold mb-3">Transforming Brands Into Market Leaders</h2>
+                <p class="lead mb-0">Real metrics from real client success stories</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-white bg-opacity-10 rounded-4 p-4">
+                        <h2 class="display-4 fw-bold mb-0">300%</h2>
+                        <p class="mb-0">Average ROI Increase</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-white bg-opacity-10 rounded-4 p-4">
+                        <h2 class="display-4 fw-bold mb-0">85%</h2>
+                        <p class="mb-0">Client Retention Rate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-white bg-opacity-10 rounded-4 p-4">
+                        <h2 class="display-4 fw-bold mb-0">50+</h2>
+                        <p class="mb-0">Industry Awards</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-white bg-opacity-10 rounded-4 p-4">
+                        <h2 class="display-4 fw-bold mb-0">48h</h2>
+                        <p class="mb-0">Fastest Sell-Out Time</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="bg-white text-dark rounded-4 p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Aura Botanics</h5>
+                        </div>
+                        <p class="text-muted small mb-2">Luxury Skincare Brand</p>
+                        <p class="mb-0"><strong>Results:</strong> 48h sell-out, 2.5M TikTok views, 300% engagement increase</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white text-dark rounded-4 p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Highland Roasters</h5>
+                        </div>
+                        <p class="text-muted small mb-2">Artisan Coffee Company</p>
+                        <p class="mb-0"><strong>Results:</strong> 150% sales growth, 40% shelf visibility increase, premium pricing achieved</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white text-dark rounded-4 p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Eco Foods</h5>
+                        </div>
+                        <p class="text-muted small mb-2">Sustainable Food Brand</p>
+                        <p class="mb-0"><strong>Results:</strong> National distribution, 200% market share growth, sustainability award winner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Certifications Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-2 d-block">Recognition</span>
+                <h2 class="display-5 fw-bold mb-3">Awards & Certifications</h2>
+                <p class="text-muted">Industry recognition for our commitment to excellence</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-light-custom rounded-4 p-4 h-100">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-award fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Design Excellence Award</h5>
+                        <p class="text-muted small mb-2">International Design Awards 2024</p>
+                        <p class="text-muted small">Best Packaging Design</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-light-custom rounded-4 p-4 h-100">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-leaf fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Sustainability Certification</h5>
+                        <p class="text-muted small mb-2">Green Business Bureau</p>
+                        <p class="text-muted small">Eco-Friendly Packaging</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-light-custom rounded-4 p-4 h-100">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-star fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Agency of the Year</h5>
+                        <p class="text-muted small mb-2">Creative Agency Network</p>
+                        <p class="text-muted small">Brand Innovation 2023</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="bg-light-custom rounded-4 p-4 h-100">
+                        <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-shield-check fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Quality Assurance</h5>
+                        <p class="text-muted small mb-2">ISO 9001:2015</p>
+                        <p class="text-muted small">Design Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-muted mb-3">Featured in:</p>
+                <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                    <span class="badge bg-dark text-white px-3 py-2">Forbes</span>
+                    <span class="badge bg-dark text-white px-3 py-2">Fast Company</span>
+                    <span class="badge bg-dark text-white px-3 py-2">AdWeek</span>
+                    <span class="badge bg-dark text-white px-3 py-2">Design Week</span>
+                    <span class="badge bg-dark text-white px-3 py-2">Packaging Europe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-2 d-block">Testimonials</span>
+                    <h2 class="display-5 fw-bold mb-5">Trusted by Founders & CMOs</h2>
+
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <figure class="text-center">
+                                    <blockquote class="blockquote fs-4 mb-4">
+                                        <p class="fst-italic text-muted">"BrandStudio didn't just design a box; they
+                                            created an unboxing experience that went viral on TikTok. Our initial
+                                            inventory sold out in 48 hours."</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mt-3 fs-6">
+                                        <strong class="text-dark">Sarah Jenning</strong> <cite title="Source Title">-
+                                            Founder, Aura Botanics</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure class="text-center">
+                                    <blockquote class="blockquote fs-4 mb-4">
+                                        <p class="fst-italic text-muted">"The strategic depth they brought to our
+                                            rebrand was incredible. They understood our sustainability mission and
+                                            translated it into a beautiful, tactile reality."</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mt-3 fs-6">
+                                        <strong class="text-dark">David Ross</strong> <cite title="Source Title">- CEO,
+                                            Eco Foods</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"
+                                style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"
+                                style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                        <h3 class="fw-bold mb-0 text-white">BrandStudio</h3>
+                    </div>
+                    <p class="text-white-50">A full-service branding and packaging agency dedicated to transforming
+                        businesses into iconic brands.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="portfolio.html"
+                                class="text-white-50 text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Brand Strategy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Packaging</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Web Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+                    <p class="text-white-50">Subscribe to get the latest design trends and news.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center">
+                <p class="mb-0 text-white-50 small">&copy; 2026 BrandStudio. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary-custom position-fixed bottom-0 end-0 m-4 shadow-lg rounded-circle"
+            style="width: 45px; height: 45px; display:flex; align-items:center; justify-content:center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

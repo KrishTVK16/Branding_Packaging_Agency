@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users - BrandStudio Admin</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/Logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-colors.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body data-theme="light">
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar bg-light-custom text-dark">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                <span class="fs-4 fw-bold text-primary">BrandStudio</span>
+            </a>
+            <nav class="nav flex-column">
+                <a class="nav-link" href="admin.html"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+                <a class="nav-link active" href="users.html"><i class="bi bi-people"></i> Users</a>
+                <a class="nav-link" href="orders.html"><i class="bi bi-cart"></i> Orders</a>
+                <a class="nav-link" href="messages.html"><i class="bi bi-envelope"></i> Messages</a>
+            </nav>
+            <div class="mt-auto px-2">
+                <a href="../login.html" class="nav-link text-danger"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="topbar">
+                <div class="d-flex align-items-center gap-3">
+                    <button id="sidebarToggle" class="btn btn-outline-secondary d-lg-none"><i
+                            class="bi bi-list"></i></button>
+                    <h2 class="h4 mb-0 fw-bold">Users Management</h2>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0"><i
+                            class="bi bi-moon-fill fs-5"></i></button>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown">
+                            <img src="https://placehold.co/40/e9ecef/6f42c1?text=A" alt="Admin"
+                                class="rounded-circle me-2">
+                            <span class="fw-bold text-dark d-none d-lg-block">Admin User</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li><a class="dropdown-item text-danger" href="../login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-0">All Users</h5>
+                    <div class="d-flex gap-2">
+                        <input type="text" class="form-control form-control-sm" placeholder="Search users...">
+                        <button class="btn btn-primary-custom btn-sm">Add User</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-custom align-middle mb-0">
+                        <thead>
+                            <tr class="text-muted small text-uppercase">
+                                <th scope="col" class="ps-4">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Joined</th>
+                                <th scope="col" class="text-end pe-4">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-2"
+                                            style="width:32px; height:32px;">JD</div>
+                                        <span class="fw-bold">John Doe</span>
+                                    </div>
+                                </td>
+                                <td>john@example.com</td>
+                                <td>Client</td>
+                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                <td>Jan 15, 2026</td>
+                                <td class="text-end pe-4">
+                                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-2"
+                                            style="width:32px; height:32px;">AS</div>
+                                        <span class="fw-bold">Alice Smith</span>
+                                    </div>
+                                </td>
+                                <td>alice@example.com</td>
+                                <td>Client</td>
+                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                <td>Jan 12, 2026</td>
+                                <td class="text-end pe-4">
+                                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-2"
+                                            style="width:32px; height:32px;">RX</div>
+                                        <span class="fw-bold">Robert X.</span>
+                                    </div>
+                                </td>
+                                <td>rob@example.com</td>
+                                <td>Admin</td>
+                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                <td>Dec 20, 2025</td>
+                                <td class="text-end pe-4">
+                                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-2"
+                                            style="width:32px; height:32px;">ZZ</div>
+                                        <span class="fw-bold">Zombie Z</span>
+                                    </div>
+                                </td>
+                                <td>zom@example.com</td>
+                                <td>Client</td>
+                                <td><span class="badge bg-secondary-subtle text-secondary">Inactive</span></td>
+                                <td>Nov 05, 2025</td>
+                                <td class="text-end pe-4">
+                                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Pagination -->
+                <div class="card-footer bg-white border-0 py-3">
+                    <nav>
+                        <ul class="pagination justify-content-center mb-0">
+                            <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+
+</html>

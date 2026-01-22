@@ -1,0 +1,456 @@
+/* BrandStudio Theme Colors - Ivory + Deep Brown + Terracotta */
+
+:root {
+    --ivory: #FAF7F2;
+    --deep-brown: #3A2A23;
+    --terracotta: #C4623A;
+    --terracotta-light: #D6794F;
+    --terracotta-dark: #A84F30;
+    --ivory-light: #FEFCF9;
+    --deep-brown-light: #4A3A33;
+}
+
+/* Light Mode Colors */
+[data-theme="light"] {
+    --bs-body-bg: var(--ivory);
+    --bs-body-color: var(--deep-brown);
+    --bs-primary: var(--terracotta);
+    --bs-primary-dark: var(--terracotta-dark);
+    --bs-primary-light: var(--terracotta-light);
+    --bs-secondary: var(--deep-brown);
+    --bs-secondary-dark: #2A1A13;
+    --bs-light: var(--ivory-light);
+    --bs-dark: var(--deep-brown);
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --bs-body-bg: var(--deep-brown);
+    --bs-body-color: var(--ivory);
+    --bs-primary: var(--terracotta);
+    --bs-primary-dark: var(--terracotta-light);
+    --bs-primary-light: var(--terracotta-dark);
+    --bs-secondary: var(--ivory);
+    --bs-secondary-dark: var(--ivory-light);
+    --bs-light: var(--deep-brown-light);
+    --bs-dark: var(--ivory);
+}
+
+/* Dark Mode Specific Enhancements */
+[data-theme="dark"] .text-muted {
+    color: var(--ivory-light) !important;
+    opacity: 0.8 !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: var(--deep-brown-light) !important;
+    border-bottom: 1px solid var(--terracotta) !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+    background-color: var(--terracotta) !important;
+    color: white !important;
+}
+
+[data-theme="dark"] .form-control {
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
+    color: var(--ivory) !important;
+    box-shadow: 0 0 0 0.25rem rgba(196, 98, 58, 0.25) !important;
+}
+
+[data-theme="dark"] .bg-light-custom {
+    background-color: var(--deep-brown-light) !important;
+}
+
+[data-theme="dark"] header.bg-dark-custom {
+    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 50%, var(--deep-brown) 100%) !important;
+}
+
+/* Enhanced text visibility in dark mode */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .display-1,
+[data-theme="dark"] .display-2,
+[data-theme="dark"] .display-3,
+[data-theme="dark"] .display-4,
+[data-theme="dark"] .display-5,
+[data-theme="dark"] .display-6 {
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .lead {
+    color: var(--ivory-light) !important;
+}
+
+/* Service cards in dark mode */
+[data-theme="dark"] .service-card {
+    background-color: var(--deep-brown-light) !important;
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .service-card:hover {
+    box-shadow: 0 20px 40px rgba(196, 98, 58, 0.3) !important;
+}
+
+/* Process section in dark mode */
+[data-theme="dark"] .process-step {
+    color: var(--ivory) !important;
+}
+
+/* Footer in dark mode */
+[data-theme="dark"] footer {
+    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%) !important;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--bs-body-bg) !important;
+    border-bottom: 1px solid var(--terracotta) !important;
+}
+
+.navbar-brand {
+    color: var(--bs-primary) !important;
+}
+
+.nav-link {
+    color: var(--bs-body-color) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+/* Button Styles */
+.btn-primary-custom {
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.btn-primary-custom:hover {
+    background: var(--bs-primary-dark) !important;
+    border-color: var(--bs-primary-dark) !important;
+    transform: translateY(-2px);
+}
+
+.btn-secondary-custom {
+    background: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    color: white !important;
+}
+
+.btn-secondary-custom:hover {
+    background: var(--bs-secondary-dark) !important;
+    border-color: var(--bs-secondary-dark) !important;
+    transform: translateY(-2px);
+}
+
+.btn-success-custom {
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.btn-success-custom:hover {
+    background: var(--bs-primary-dark) !important;
+    border-color: var(--bs-primary-dark) !important;
+    transform: translateY(-2px);
+}
+
+/* Card and Background Styles */
+.bg-light-custom {
+    background-color: var(--bs-light) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--bs-dark) !important;
+}
+
+.card {
+    background-color: var(--bs-body-bg) !important;
+    border-color: var(--terracotta) !important;
+    color: var(--bs-body-color) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary) !important;
+}
+
+.text-muted {
+    color: var(--bs-body-color) !important;
+    opacity: 0.7 !important;
+}
+
+/* Header Styles */
+header.bg-dark-custom {
+    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%) !important;
+}
+
+/* Footer Styles */
+footer {
+    background: var(--deep-brown) !important;
+    color: var(--ivory) !important;
+}
+
+footer h3,
+footer h5 {
+    color: var(--ivory) !important;
+}
+
+footer a {
+    color: var(--ivory) !important;
+}
+
+footer a:hover {
+    color: var(--terracotta) !important;
+}
+
+footer .text-white-50 {
+    color: var(--ivory) !important;
+    opacity: 0.7 !important;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    background-color: var(--bs-body-bg) !important;
+    border-color: var(--terracotta) !important;
+}
+
+.dropdown-item {
+    color: var(--bs-body-color) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+/* Form Styles */
+.form-control {
+    background-color: var(--bs-body-bg) !important;
+    border-color: var(--terracotta) !important;
+    color: var(--bs-body-color) !important;
+}
+
+.form-control:focus {
+    background-color: var(--bs-body-bg) !important;
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-body-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(196, 98, 58, 0.25) !important;
+}
+
+/* Animation Classes */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-slide-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Service Card Styles */
+.service-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--bs-primary);
+    box-shadow: 0 20px 40px rgba(196, 98, 58, 0.2) !important;
+}
+
+.service-card:hover .icon-box {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Scale */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Pattern Background */
+.pattern-dots {
+    background-image: radial-gradient(circle, var(--bs-primary) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Gradient Background */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary-dark) 100%);
+}
+
+/* Icon Box Styles */
+.icon-box {
+    transition: all 0.3s ease;
+}
+
+/* Process Step Styles */
+.process-step:hover .step-number {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .step-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Floating Shape Styles */
+.floating-shape {
+    transition: all 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .service-card {
+        padding: 2rem !important;
+    }
+    
+    /* Enhanced mobile dark mode */
+    [data-theme="dark"] .card {
+        background-color: var(--deep-brown-light) !important;
+        border: 1px solid var(--terracotta) !important;
+    }
+    
+    [data-theme="dark"] .text-muted {
+        color: var(--ivory) !important;
+        opacity: 0.9 !important;
+    }
+    
+    /* Better contrast for mobile */
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6 {
+        color: var(--ivory-light) !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    [data-theme="dark"] {
+        --bs-body-color: #FFFFFF !important;
+        --ivory: #FFFFFF !important;
+        --ivory-light: #F0F0F0 !important;
+    }
+    
+    [data-theme="dark"] .text-muted {
+        opacity: 1 !important;
+    }
+    
+    [data-theme="dark"] .card {
+        border: 2px solid var(--terracotta) !important;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .service-card:hover {
+        transform: none !important;
+    }
+    
+    .hover-scale:hover {
+        transform: none !important;
+    }
+    
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-fade-in-up {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    [data-theme="dark"] {
+        --bs-body-bg: white !important;
+        --bs-body-color: black !important;
+    }
+    
+    .service-card {
+        break-inside: avoid;
+    }
+}

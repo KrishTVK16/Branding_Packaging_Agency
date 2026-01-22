@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - BrandStudio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-colors.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light-custom shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                <span class="fs-4 fw-bold text-primary">BrandStudio</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1 (Creative)</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2 (Digital)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0">
+                        <i class="bi bi-moon-fill fs-5"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-link text-dark p-0 border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="admin/admin.html"><i class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="bi bi-person-plus me-2"></i>Get Started</a></li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-padding pt-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="text-primary text-uppercase fw-bold letter-spacing-2 mb-3 d-block">Resource Hub</span>
+                    <h1 class="display-3 fw-bold mb-4">Design Guides & <span class="text-primary">Resources</span></h1>
+                    <p class="lead text-muted mb-5">Free templates, guides, and insights to help you build better brands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search resources...">
+                        <button class="btn btn-primary-custom" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <button class="btn btn-outline-primary btn-sm">All</button>
+                        <button class="btn btn-outline-secondary btn-sm">Guides</button>
+                        <button class="btn btn-outline-secondary btn-sm">Templates</button>
+                        <button class="btn btn-outline-secondary btn-sm">Checklists</button>
+                        <button class="btn btn-outline-secondary btn-sm">Case Studies</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Featured Resources</h2>
+                <p class="text-muted">Most popular downloads and guides</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Guide 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-up transition-all">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-book"></i>
+                                </div>
+                                <div>
+                                    <span class="badge bg-primary text-white small">Guide</span>
+                                    <h5 class="fw-bold mb-0 mt-1">Brand Strategy Playbook</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-3">Complete guide to developing a winning brand strategy from positioning to execution.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">25 pages • PDF</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-up transition-all">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-file-earmark"></i>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success text-white small">Template</span>
+                                    <h5 class="fw-bold mb-0 mt-1">Brand Guidelines Template</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-3">Professional brand guidelines template with all essential sections for your brand book.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">InDesign • AI • PSD</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checklist 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-up transition-all">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-check2-square"></i>
+                                </div>
+                                <div>
+                                    <span class="badge bg-warning text-white small">Checklist</span>
+                                    <h5 class="fw-bold mb-0 mt-1">Packaging Design Checklist</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-3">Essential checklist for successful packaging design from concept to production.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">5 pages • PDF</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Resources Grid -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">All Resources</h2>
+                <p class="text-muted">Browse our complete library of free resources</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Strategy Resources -->
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-4"><i class="bi bi-lightbulb text-primary me-2"></i>Brand Strategy</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Market Research Template</h6>
+                                <p class="text-muted small mb-2">Comprehensive market analysis framework</p>
+                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Competitor Analysis Guide</h6>
+                                <p class="text-muted small mb-2">Step-by-step competitor research</p>
+                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Resources -->
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-4"><i class="bi bi-palette text-primary me-2"></i>Design Resources</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Color Palette Generator</h6>
+                                <p class="text-muted small mb-2">AI-powered color combination tool</p>
+                                <a href="#" class="text-primary text-decoration-none small">Access Tool →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Typography Guide</h6>
+                                <p class="text-muted small mb-2">Font pairing best practices</p>
+                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Packaging Resources -->
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-4"><i class="bi bi-box-seam text-primary me-2"></i>Packaging Design</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Dieline Templates Library</h6>
+                                <p class="text-muted small mb-2">Free packaging dieline templates</p>
+                                <a href="#" class="text-primary text-decoration-none small">Browse →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Material Selection Guide</h6>
+                                <p class="text-muted small mb-2">Sustainable packaging materials</p>
+                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Resources -->
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-4"><i class="bi bi-briefcase text-primary me-2"></i>Business Tools</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Project Proposal Template</h6>
+                                <p class="text-muted small mb-2">Winning project proposal format</p>
+                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white rounded-3 p-3 h-100">
+                                <h6 class="fw-bold mb-2">Client Brief Template</h6>
+                                <p class="text-muted small mb-2">Comprehensive project brief form</p>
+                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="bg-primary text-white rounded-4 p-5 text-center">
+                <h2 class="display-5 fw-bold mb-3">Get Exclusive Resources</h2>
+                <p class="lead mb-4">Subscribe to our newsletter for weekly design insights and new resource alerts</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-white text-primary fw-bold" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                        <h3 class="fw-bold mb-0 text-white">BrandStudio</h3>
+                    </div>
+                    <p class="text-white-50">A full-service branding and packaging agency dedicated to transforming businesses into iconic brands.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="portfolio.html" class="text-white-50 text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Brand Strategy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Packaging</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Web Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+                    <p class="text-white-50">Subscribe to get the latest design trends and news.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center">
+                <p class="mb-0 text-white-50 small">&copy; 2026 BrandStudio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
