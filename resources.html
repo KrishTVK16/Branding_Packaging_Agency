@@ -48,7 +48,7 @@
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -58,11 +58,12 @@
                         <i class="bi bi-moon-fill fs-5"></i>
                     </button>
                     <div class="dropdown">
-                        <button class="btn btn-link text-dark p-0 border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button class="btn btn-outline-dark p-2 border dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
                             <i class="bi bi-person-circle fs-5"></i>
+                            <span>Profile</span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="admin/admin.html"><i class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
+                            <li><a class="dropdown-item" href="admin.html"><i class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
                             <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a></li>
                             <li><a class="dropdown-item" href="register.html"><i class="bi bi-person-plus me-2"></i>Get Started</a></li>
                         </ul>
@@ -109,7 +110,7 @@
     </section>
 
     <!-- Featured Resources -->
-    <section class="section-padding">
+    <section class="section-padding-sm">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold mb-3">Featured Resources</h2>
@@ -119,8 +120,8 @@
             <div class="row g-4">
                 <!-- Guide 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                        <div class="card-body p-4">
+                    <div class="card h-100 border-0 shadow-sm hover-up transition-all d-flex flex-column">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
                                     <i class="bi bi-book"></i>
@@ -131,9 +132,13 @@
                                 </div>
                             </div>
                             <p class="text-muted mb-3">Complete guide to developing a winning brand strategy from positioning to execution.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">25 pages • PDF</small>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <small class="text-muted">25 pages • PDF</small>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -141,8 +146,8 @@
 
                 <!-- Template 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                        <div class="card-body p-4">
+                    <div class="card h-100 border-0 shadow-sm hover-up transition-all d-flex flex-column">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
                                     <i class="bi bi-file-earmark"></i>
@@ -153,9 +158,13 @@
                                 </div>
                             </div>
                             <p class="text-muted mb-3">Professional brand guidelines template with all essential sections for your brand book.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">InDesign • AI • PSD</small>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <small class="text-muted">InDesign • AI • PSD</small>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,8 +172,8 @@
 
                 <!-- Checklist 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                        <div class="card-body p-4">
+                    <div class="card h-100 border-0 shadow-sm hover-up transition-all d-flex flex-column">
+                        <div class="card-body p-4 d-flex flex-column">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
                                     <i class="bi bi-check2-square"></i>
@@ -175,9 +184,13 @@
                                 </div>
                             </div>
                             <p class="text-muted mb-3">Essential checklist for successful packaging design from concept to production.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">5 pages • PDF</small>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <small class="text-muted">5 pages • PDF</small>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Download</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -197,20 +210,45 @@
             <div class="row g-4">
                 <!-- Strategy Resources -->
                 <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4"><i class="bi bi-lightbulb text-primary me-2"></i>Brand Strategy</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Market Research Template</h6>
-                                <p class="text-muted small mb-2">Comprehensive market analysis framework</p>
-                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm hover-up transition-all">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
+                                <i class="bi bi-lightbulb fs-4"></i>
                             </div>
+                            <h4 class="fw-bold mb-0">Brand Strategy</h4>
                         </div>
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Competitor Analysis Guide</h6>
-                                <p class="text-muted small mb-2">Step-by-step competitor research</p>
-                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-file-earmark-text fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Market Research Template</h6>
+                                            <p class="text-muted small mb-2">Comprehensive market analysis framework</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-primary text-decoration-none small fw-semibold">Download →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-graph-up fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Competitor Analysis Guide</h6>
+                                            <p class="text-muted small mb-2">Step-by-step competitor research</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-primary text-decoration-none small fw-semibold">Download →</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,20 +256,45 @@
 
                 <!-- Design Resources -->
                 <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4"><i class="bi bi-palette text-primary me-2"></i>Design Resources</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Color Palette Generator</h6>
-                                <p class="text-muted small mb-2">AI-powered color combination tool</p>
-                                <a href="#" class="text-primary text-decoration-none small">Access Tool →</a>
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm hover-up transition-all">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
+                                <i class="bi bi-palette fs-4"></i>
                             </div>
+                            <h4 class="fw-bold mb-0">Design Resources</h4>
                         </div>
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Typography Guide</h6>
-                                <p class="text-muted small mb-2">Font pairing best practices</p>
-                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-droplet-half fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Color Palette Generator</h6>
+                                            <p class="text-muted small mb-2">AI-powered color combination tool</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-success text-decoration-none small fw-semibold">Access Tool →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-fonts fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Typography Guide</h6>
+                                            <p class="text-muted small mb-2">Font pairing best practices</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-success text-decoration-none small fw-semibold">Download →</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,20 +302,45 @@
 
                 <!-- Packaging Resources -->
                 <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4"><i class="bi bi-box-seam text-primary me-2"></i>Packaging Design</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Dieline Templates Library</h6>
-                                <p class="text-muted small mb-2">Free packaging dieline templates</p>
-                                <a href="#" class="text-primary text-decoration-none small">Browse →</a>
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm hover-up transition-all">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
+                                <i class="bi bi-box-seam fs-4"></i>
                             </div>
+                            <h4 class="fw-bold mb-0">Packaging Design</h4>
                         </div>
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Material Selection Guide</h6>
-                                <p class="text-muted small mb-2">Sustainable packaging materials</p>
-                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-grid-3x3-gap fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Dieline Templates Library</h6>
+                                            <p class="text-muted small mb-2">Free packaging dieline templates</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-warning text-decoration-none small fw-semibold">Browse →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-recycle fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Material Selection Guide</h6>
+                                            <p class="text-muted small mb-2">Sustainable packaging materials</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-warning text-decoration-none small fw-semibold">Download →</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -260,20 +348,45 @@
 
                 <!-- Business Resources -->
                 <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4"><i class="bi bi-briefcase text-primary me-2"></i>Business Tools</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Project Proposal Template</h6>
-                                <p class="text-muted small mb-2">Winning project proposal format</p>
-                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm hover-up transition-all">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
+                                <i class="bi bi-briefcase fs-4"></i>
                             </div>
+                            <h4 class="fw-bold mb-0">Business Tools</h4>
                         </div>
-                        <div class="col-md-6">
-                            <div class="bg-white rounded-3 p-3 h-100">
-                                <h6 class="fw-bold mb-2">Client Brief Template</h6>
-                                <p class="text-muted small mb-2">Comprehensive project brief form</p>
-                                <a href="#" class="text-primary text-decoration-none small">Download →</a>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-file-earmark-ruled fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Project Proposal Template</h6>
+                                            <p class="text-muted small mb-2">Winning project proposal format</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-info text-decoration-none small fw-semibold">Download →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border rounded-3 p-3 h-100 d-flex flex-column hover-lift transition-all">
+                                    <div class="d-flex align-items-start mb-2">
+                                        <div class="bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center me-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                                            <i class="bi bi-clipboard-check fs-6"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Client Brief Template</h6>
+                                            <p class="text-muted small mb-2">Comprehensive project brief form</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-center">
+                                        <a href="#" class="text-info text-decoration-none small fw-semibold">Download →</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -283,7 +396,7 @@
     </section>
 
     <!-- Newsletter Signup -->
-    <section class="section-padding">
+    <section class="section-padding-sm">
         <div class="container">
             <div class="bg-primary text-white rounded-4 p-5 text-center">
                 <h2 class="display-5 fw-bold mb-3">Get Exclusive Resources</h2>

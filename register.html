@@ -26,19 +26,19 @@
         <div class="row g-0 rounded-4 overflow-hidden shadow-lg bg-white" style="max-width: 900px; margin: 0 auto;">
             <!-- Left Side: Image -->
             <div class="col-lg-6 d-none d-lg-block header-image-container position-relative">
-                <img src="https://placehold.co/800x1200/fd7e14/ffffff?text=Join+Us"
+                <img src="assets/Signup.jfif"
                     class="img-fluid h-100 w-100 object-fit-cover" alt="Register Image">
                 <div class="position-absolute bottom-0 start-0 p-5 text-white bg-gradient-to-t"
-                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                    <h3 class="fw-bold">"Everything is designed. Few things are designed well."</h3>
-                    <p class="mb-0 opacity-75">- Brian Reed</p>
+                    style="background: linear-gradient(to top, rgba(200, 70, 50, 0.8), transparent);">
+                    <h3 class="fw-bold">"Identity is not created to impress. It is created to endure."</h3>
+                    <p class="mb-0 opacity-75">- Sujata Keshavan</p>
                 </div>
             </div>
 
             <!-- Right Side: Form -->
             <div class="col-lg-6 p-5 d-flex flex-column justify-content-center custom-bg">
-                <div class="mb-4">
-                    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="mb-4 text-center">
+                    <a class="navbar-brand d-flex align-items-center gap-2 justify-content-center" href="index.html">
                         <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
                         <span class="fs-4 fw-bold text-primary">BrandStudio</span>
                     </a>
@@ -46,7 +46,7 @@
                     <p class="text-muted small">Join us and start building your brand.</p>
                 </div>
 
-                <form action="admin/admin.html">
+                <form action="admin.html">
                     <div class="mb-3">
                         <label class="form-label small fw-bold">Full Name</label>
                         <input type="text" class="form-control" placeholder="John Doe" required>
@@ -67,10 +67,16 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary-custom w-100 mb-3">Sign Up</button>
-                    <button type="button"
-                        class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
-                        <i class="bi bi-google"></i> Sign up with Google
-                    </button>
+                    <div class="d-flex gap-2">
+                        <button type="button"
+                            class="btn btn-outline-dark flex-fill d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-google"></i> Google
+                        </button>
+                        <button type="button"
+                            class="btn btn-outline-primary flex-fill d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </button>
+                    </div>
                 </form>
 
                 <p class="text-center mt-4 text-muted small">Already have an account? <a href="login.html"

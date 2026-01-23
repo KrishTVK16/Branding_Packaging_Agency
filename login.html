@@ -26,8 +26,8 @@
             style="max-width: 900px; margin: 0 auto; min-height: 600px;">
             <!-- Left Side: Form -->
             <div class="col-lg-6 p-5 d-flex flex-column justify-content-center custom-bg">
-                <div class="mb-4">
-                    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="mb-4 text-center">
+                    <a class="navbar-brand d-flex align-items-center gap-2 justify-content-center" href="index.html">
                         <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
                         <span class="fs-4 fw-bold text-primary">BrandStudio</span>
                     </a>
@@ -35,7 +35,7 @@
                     <p class="text-muted small">Please enter your details to sign in.</p>
                 </div>
 
-                <form action="admin/admin.html">
+                <form action="admin.html">
                     <div class="mb-3">
                         <label class="form-label small fw-bold">Email Address</label>
                         <input type="email" class="form-control" placeholder="Enter your email" required>
@@ -52,28 +52,30 @@
                         <a href="#" class="text-primary text-decoration-none">Forgot password?</a>
                     </div>
                     <button type="submit" class="btn btn-primary-custom w-100 mb-3">Sign In</button>
-                    <button type="button"
-                        class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
-                        <i class="bi bi-google"></i> Sign in with Google
-                    </button>
+                    <div class="d-flex gap-2">
+                        <button type="button"
+                            class="btn btn-outline-dark flex-fill d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-google"></i> Google
+                        </button>
+                        <button type="button"
+                            class="btn btn-outline-primary flex-fill d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </button>
+                    </div>
                 </form>
 
                 <p class="text-center mt-4 text-muted small">Don't have an account? <a href="register.html"
                         class="text-primary fw-bold text-decoration-none">Sign up</a></p>
-                <div class="text-center mt-2">
-                    <a href="index.html" class="text-muted small text-decoration-none"><i class="bi bi-arrow-left"></i>
-                        Back to Home</a>
-                </div>
             </div>
 
             <!-- Right Side: Image -->
             <div class="col-lg-6 d-none d-lg-block header-image-container position-relative">
-                <img src="https://placehold.co/800x1200/6f42c1/ffffff?text=Studio+Vibes"
+                <img src="assets/Login1.png"
                     class="img-fluid h-100 w-100 object-fit-cover" alt="Login Image">
                 <div class="position-absolute bottom-0 start-0 p-5 text-white bg-gradient-to-t"
-                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                    <h3 class="fw-bold">"Design is intelligence made visible."</h3>
-                    <p class="mb-0 opacity-75">- Alina Wheeler</p>
+                    style="background: linear-gradient(to top, rgba(200, 70, 50, 0.8), transparent);">
+                    <h3 class="fw-bold">"Father of Indian Branding."</h3>
+                    <p class="mb-0 opacity-75">- Harshavardhan Chauhan</p>
                 </div>
             </div>
         </div>

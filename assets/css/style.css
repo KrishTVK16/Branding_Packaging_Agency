@@ -212,6 +212,10 @@ a:hover {
     padding: 80px 0;
 }
 
+.section-padding-sm {
+    padding: 40px 0;
+}
+
 /* Fix for visibility on dark backgrounds */
 .bg-dark-custom h1,
 .bg-dark-custom h2,
@@ -315,4 +319,58 @@ a:hover {
 [dir="rtl"] .me-auto {
     margin-left: auto !important;
     margin-right: 0 !important;
+}
+
+/* Resources Section Custom Styles */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--bs-primary) !important;
+}
+
+.hover-lift:hover .bg-primary {
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.hover-lift:hover .bg-success {
+    background-color: var(--bs-success) !important;
+    color: white !important;
+}
+
+.hover-lift:hover .bg-warning {
+    background-color: var(--bs-warning) !important;
+    color: white !important;
+}
+
+.hover-lift:hover .bg-info {
+    background-color: var(--bs-info) !important;
+    color: white !important;
+}
+
+/* Blog Images Equal Height */
+.blog .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Blog Cards Equal Height */
+.blog .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog .card-body .card-text {
+    flex: 1;
 }
