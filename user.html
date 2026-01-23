@@ -19,23 +19,44 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 
-<body data-theme="light">
+<body data-theme="light" data-page="user">
 
     <div class="dashboard-container">
+        <!-- Mobile Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        
         <!-- Sidebar -->
-        <aside class="sidebar bg-light-custom text-dark">
+        <aside class="sidebar bg-light-custom text-dark" id="sidebar">
+            <!-- Tablet Toggle Button -->
+            <button class="sidebar-toggle-btn d-none d-md-block d-lg-none" id="tabletSidebarToggle">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
                 <span class="fs-4 fw-bold text-primary">BrandStudio</span>
             </a>
 
-            <nav class="nav flex-column">
-                <a class="nav-link active" href="user.html">
+            <nav class="nav flex-column mt-3">
+                <a class="nav-link active" href="#" data-tab="dashboard" data-bs-toggle="tab" data-bs-target="#dashboard">
                     <i class="bi bi-person-circle"></i> My Dashboard
                 </a>
-                <a class="nav-link" href="admin.html">
-                    <i class="bi bi-grid-1x2-fill"></i> Admin Dashboard
+                <a class="nav-link" href="#" data-tab="orders" data-bs-toggle="tab" data-bs-target="#orders">
+                    <i class="bi bi-cart"></i> My Orders
                 </a>
+                <a class="nav-link" href="#" data-tab="concerns" data-bs-toggle="tab" data-bs-target="#concerns">
+                    <i class="bi bi-exclamation-triangle"></i> My Concerns
+                </a>
+                <a class="nav-link" href="#" data-tab="messages" data-bs-toggle="tab" data-bs-target="#messages">
+                    <i class="bi bi-envelope"></i> My Messages
+                </a>
+                <a class="nav-link" href="#" data-tab="profile" data-bs-toggle="tab" data-bs-target="#profile">
+                    <i class="bi bi-person"></i> Profile
+                </a>
+                <hr class="my-3">
+                <!-- <a class="nav-link" href="admin.html">
+                    <i class="bi bi-grid-1x2-fill"></i> Admin Dashboard
+                </a> -->
             </nav>
         </aside>
 
@@ -47,7 +68,7 @@
                     <button id="sidebarToggle" class="btn btn-outline-secondary d-lg-none">
                         <i class="bi bi-list"></i>
                     </button>
-                    <h2 class="h4 mb-0 fw-bold">My Dashboard</h2>
+                    <h2 class="h4 mb-0 fw-bold" id="pageTitle">My Dashboard</h2>
                 </div>
 
                 <div class="d-flex align-items-center gap-3">
@@ -72,34 +93,6 @@
                 </div>
             </div>
 
-            <!-- Tab Navigation -->
-            <ul class="nav nav-tabs mb-4" id="userTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard" type="button" role="tab">
-                        <i class="bi bi-person-circle me-2"></i>My Dashboard
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab">
-                        <i class="bi bi-cart me-2"></i>My Orders
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="concerns-tab" data-bs-toggle="tab" data-bs-target="#concerns" type="button" role="tab">
-                        <i class="bi bi-exclamation-triangle me-2"></i>My Concerns
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab">
-                        <i class="bi bi-envelope me-2"></i>My Messages
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">
-                        <i class="bi bi-person me-2"></i>Profile
-                    </button>
-                </li>
-            </ul>
 
             <!-- Tab Content -->
             <div class="tab-content" id="userTabsContent">

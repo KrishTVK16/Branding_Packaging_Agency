@@ -22,7 +22,7 @@
 <body data-theme="light" class="d-flex align-items-center justify-content-center min-vh-100 bg-light-custom"
     style="padding: 2rem 0;">
 
-    <div class="container">
+    <div class="container px-3">
         <div class="row g-0 rounded-4 overflow-hidden shadow-lg bg-white" style="max-width: 900px; margin: 0 auto;">
             <!-- Left Side: Image -->
             <div class="col-lg-6 d-none d-lg-block header-image-container position-relative">
@@ -36,7 +36,7 @@
             </div>
 
             <!-- Right Side: Form -->
-            <div class="col-lg-6 p-5 d-flex flex-column justify-content-center custom-bg">
+            <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center custom-bg">
                 <div class="mb-4 text-center">
                     <a class="navbar-brand d-flex align-items-center gap-2 justify-content-center" href="index.html">
                         <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
@@ -67,19 +67,23 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary-custom w-100 mb-3">Sign Up</button>
-                    <div class="d-flex gap-2">
-                        <button type="button"
-                            class="btn btn-outline-dark flex-fill d-flex align-items-center justify-content-center gap-2">
-                            <i class="bi bi-google"></i> Google
-                        </button>
-                        <button type="button"
-                            class="btn btn-outline-primary flex-fill d-flex align-items-center justify-content-center gap-2">
-                            <i class="bi bi-facebook"></i> Facebook
-                        </button>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <button type="button"
+                                class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                                <i class="bi bi-google"></i> <span class="d-none d-sm-inline">Google</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button"
+                                class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center gap-2">
+                                <i class="bi bi-facebook"></i> <span class="d-none d-sm-inline">Facebook</span>
+                            </button>
+                        </div>
                     </div>
                 </form>
 
-                <p class="text-center mt-4 text-muted small">Already have an account? <a href="login.html"
+                <p class="text-center mt-4 text-muted small">Already have account? <a href="login.html"
                         class="text-primary fw-bold text-decoration-none">Sign in</a></p>
             </div>
         </div>
