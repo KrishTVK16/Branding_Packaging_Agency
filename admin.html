@@ -163,72 +163,69 @@
                         <div class="card-header bg-white border-0 py-3">
                             <h5 class="fw-bold mb-0">Recent Orders</h5>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-custom align-middle mb-0">
-                                <thead>
-                                    <tr class="text-muted small text-uppercase">
-                                        <th scope="col" class="ps-4">Order ID</th>
-                                        <th scope="col">Client</th>
-                                        <th scope="col">Service</th>
-                                        <th scope="col">Amount</th>
-                                        <th scope="col">Status</th>
-                                        <th scope="col" class="text-end pe-4">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="ps-4 fw-bold">#ORD-001</td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-2"
-                                                    style="width:32px; height:32px;">JD</div>
-                                                <span>John Doe</span>
+                        <div class="card-body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="order-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-001</span>
+                                                <h6 class="fw-bold mt-2 mb-1">Logo Design</h6>
+                                                <p class="text-muted small mb-0">John Doe</p>
                                             </div>
-                                        </td>
-                                        <td>Logo Design</td>
-                                        <td>$999</td>
-                                        <td><span class="badge bg-warning text-dark">Pending</span></td>
-                                        <td class="text-end pe-4">
-                                            <button class="btn btn-sm btn-link text-dark"><i
-                                                    class="bi bi-three-dots-vertical"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-4 fw-bold">#ORD-002</td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-2"
-                                                    style="width:32px; height:32px;">AS</div>
-                                                <span>Alice Smith</span>
+                                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width:40px; height:40px; font-size:0.8rem;">JD</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="fw-bold text-dark mb-0">$999</p>
+                                                <span class="badge bg-warning text-dark">Pending</span>
                                             </div>
-                                        </td>
-                                        <td>Packaging Bundle</td>
-                                        <td>$2,499</td>
-                                        <td><span class="badge bg-info text-white">In Progress</span></td>
-                                        <td class="text-end pe-4">
-                                            <button class="btn btn-sm btn-link text-dark"><i
-                                                    class="bi bi-three-dots-vertical"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-4 fw-bold">#ORD-003</td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-2"
-                                                    style="width:32px; height:32px;">MJ</div>
-                                                <span>Mike Jones</span>
+                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="order-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-002</span>
+                                                <h6 class="fw-bold mt-2 mb-1">Packaging Bundle</h6>
+                                                <p class="text-muted small mb-0">Alice Smith</p>
                                             </div>
-                                        </td>
-                                        <td>Brand Strategy</td>
-                                        <td>$1,500</td>
-                                        <td><span class="badge bg-success">Completed</span></td>
-                                        <td class="text-end pe-4">
-                                            <button class="btn btn-sm btn-link text-dark"><i
-                                                    class="bi bi-three-dots-vertical"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                            <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width:40px; height:40px; font-size:0.8rem;">AS</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="fw-bold text-dark mb-0">$2,499</p>
+                                                <span class="badge bg-info text-white">In Progress</span>
+                                            </div>
+                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="order-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-003</span>
+                                                <h6 class="fw-bold mt-2 mb-1">Brand Strategy</h6>
+                                                <p class="text-muted small mb-0">Mike Jones</p>
+                                            </div>
+                                            <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width:40px; height:40px; font-size:0.8rem;">MJ</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="fw-bold text-dark mb-0">$1,500</p>
+                                                <span class="badge bg-success">Completed</span>
+                                            </div>
+                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,55 +240,63 @@
                                 <button class="btn btn-primary-custom btn-sm">Add User</button>
                             </div>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-custom align-middle mb-0">
-                                <thead>
-                                    <tr class="text-muted small text-uppercase">
-                                        <th scope="col" class="ps-4">Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Role</th>
-                                        <th scope="col">Status</th>
-                                        <th scope="col">Joined</th>
-                                        <th scope="col" class="text-end pe-4">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="ps-4">
+                        <div class="card-body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="user-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div class="d-flex align-items-center">
-                                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-2"
-                                                    style="width:32px; height:32px;">JD</div>
-                                                <span class="fw-bold">John Doe</span>
+                                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                                    style="width:48px; height:48px; font-size:1rem;">JD</div>
+                                                <div>
+                                                    <h6 class="fw-bold mb-0">John Doe</h6>
+                                                    <p class="text-muted small mb-0">john@example.com</p>
+                                                </div>
                                             </div>
-                                        </td>
-                                        <td>john@example.com</td>
-                                        <td>Client</td>
-                                        <td><span class="badge bg-success-subtle text-success">Active</span></td>
-                                        <td>Jan 15, 2026</td>
-                                        <td class="text-end pe-4">
-                                            <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
-                                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-4">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-success-subtle text-success">Active</span>
+                                                <p class="text-muted small mb-0 mt-2">Client</p>
+                                            </div>
+                                            <div class="d-flex gap-1">
+                                                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
+                                                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 pt-2 border-top">
+                                            <p class="text-muted small mb-0">Joined: Jan 15, 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="user-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div class="d-flex align-items-center">
-                                                <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-2"
-                                                    style="width:32px; height:32px;">AS</div>
-                                                <span class="fw-bold">Alice Smith</span>
+                                                <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                                    style="width:48px; height:48px; font-size:1rem;">AS</div>
+                                                <div>
+                                                    <h6 class="fw-bold mb-0">Alice Smith</h6>
+                                                    <p class="text-muted small mb-0">alice@example.com</p>
+                                                </div>
                                             </div>
-                                        </td>
-                                        <td>alice@example.com</td>
-                                        <td>Client</td>
-                                        <td><span class="badge bg-success-subtle text-success">Active</span></td>
-                                        <td>Jan 12, 2026</td>
-                                        <td class="text-end pe-4">
-                                            <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
-                                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-success-subtle text-success">Active</span>
+                                                <p class="text-muted small mb-0 mt-2">Client</p>
+                                            </div>
+                                            <div class="d-flex gap-1">
+                                                <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
+                                                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 pt-2 border-top">
+                                            <p class="text-muted small mb-0">Joined: Jan 12, 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,44 +315,55 @@
                                 <button class="btn btn-primary-custom btn-sm"><i class="bi bi-download"></i> Export CSV</button>
                             </div>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-custom align-middle mb-0">
-                                <thead>
-                                    <tr class="text-muted small text-uppercase">
-                                        <th scope="col" class="ps-4">Order ID</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Client</th>
-                                        <th scope="col">Service</th>
-                                        <th scope="col">Amount</th>
-                                        <th scope="col">Status</th>
-                                        <th scope="col" class="text-end pe-4">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="ps-4 fw-bold">#ORD-001</td>
-                                        <td>Jan 20, 2026</td>
-                                        <td>John Doe</td>
-                                        <td>Logo Design</td>
-                                        <td>$999</td>
-                                        <td><span class="badge bg-warning text-dark">Pending</span></td>
-                                        <td class="text-end pe-4">
+                        <div class="card-body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="order-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-001</span>
+                                                <h6 class="fw-bold mt-2 mb-1">Logo Design</h6>
+                                                <p class="text-muted small mb-0">John Doe</p>
+                                            </div>
+                                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width:40px; height:40px; font-size:0.8rem;">JD</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div>
+                                                <p class="fw-bold text-dark mb-0">$999</p>
+                                                <span class="badge bg-warning text-dark">Pending</span>
+                                            </div>
                                             <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-4 fw-bold">#ORD-002</td>
-                                        <td>Jan 19, 2026</td>
-                                        <td>Alice Smith</td>
-                                        <td>Package Bundle</td>
-                                        <td>$2,499</td>
-                                        <td><span class="badge bg-info text-white">Processing</span></td>
-                                        <td class="text-end pe-4">
+                                        </div>
+                                        <div class="mt-2 pt-2 border-top">
+                                            <p class="text-muted small mb-0">Jan 20, 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="order-card border rounded-3 p-3 h-100">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-002</span>
+                                                <h6 class="fw-bold mt-2 mb-1">Package Bundle</h6>
+                                                <p class="text-muted small mb-0">Alice Smith</p>
+                                            </div>
+                                            <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width:40px; height:40px; font-size:0.8rem;">AS</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div>
+                                                <p class="fw-bold text-dark mb-0">$2,499</p>
+                                                <span class="badge bg-info text-white">Processing</span>
+                                            </div>
                                             <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </div>
+                                        <div class="mt-2 pt-2 border-top">
+                                            <p class="text-muted small mb-0">Jan 19, 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -413,9 +429,9 @@
             </div>
 
             <!-- Footer -->
-            <footer class="mt-5 text-center text-muted small">
+            <!-- <footer class="mt-5 text-center text-muted small">
                 &copy; 2026 BrandStudio Admin.
-            </footer>
+            </footer> -->
         </main>
     </div>
 
