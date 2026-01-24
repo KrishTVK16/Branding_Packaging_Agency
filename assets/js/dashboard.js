@@ -8,14 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize sidebar state based on screen size
     function initializeSidebarState() {
-        if (window.innerWidth >= 768 && window.innerWidth <= 991.98) {
-            // Tablet mode - start collapsed
-            sidebar.classList.add('collapsed');
-            sidebar.classList.remove('expanded', 'show');
+        if (window.innerWidth >= 650 && window.innerWidth <= 767.98) {
+            // Tablet mode - desktop layout maintained
+            sidebar.classList.remove('collapsed', 'expanded', 'show');
             if (tabletSidebarToggle) {
-                tabletSidebarToggle.innerHTML = '<i class="bi bi-chevron-right"></i>';
+                tabletSidebarToggle.style.display = 'none';
             }
-        } else if (window.innerWidth < 768) {
+        } else if (window.innerWidth < 650) {
             // Mobile mode - start hidden
             sidebar.classList.remove('collapsed', 'expanded', 'show');
             if (sidebarOverlay) {
@@ -89,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close sidebar when clicking outside on mobile
     document.addEventListener('click', (e) => {
-        if (window.innerWidth < 768 &&
+        if (window.innerWidth < 650 &&
             sidebar.classList.contains('show') &&
             !sidebar.contains(e.target) &&
             !sidebarToggle?.contains(e.target) &&
@@ -144,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Close mobile sidebar after selecting a tab
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 650) {
                 sidebar.classList.remove('show');
                 if (sidebarOverlay) {
                     sidebarOverlay.classList.remove('show');
@@ -158,4 +157,82 @@ document.addEventListener('DOMContentLoaded', () => {
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+
+    // Status filter functionality for orders
+    initializeStatusFilters();
 });
+
+function initializeStatusFilters() {
+    // Handle desktop button group clicks
+    const statusButtons = document.querySelectorAll('[data-status]');
+    statusButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons in the same group
+            const buttonGroup = this.closest('.btn-group');
+            if (buttonGroup) {
+                buttonGroup.querySelectorAll('.btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.classList.remove('btn-secondary');
+                    btn.classList.add('btn-outline-secondary');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                this.classList.remove('btn-outline-secondary');
+                this.classList.add('btn-secondary');
+            }
+            
+            // Filter orders based on status
+            filterOrders(this.getAttribute('data-status'));
+        });
+    });
+
+    // Handle mobile dropdown clicks
+    const dropdownItems = document.querySelectorAll('.dropdown-item[data-status]');
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Update dropdown label
+            const statusLabel = document.getElementById('statusLabel');
+            if (statusLabel) {
+                statusLabel.textContent = this.textContent;
+            }
+            
+            // Update active state in dropdown
+            const dropdown = this.closest('.dropdown-menu');
+            if (dropdown) {
+                dropdown.querySelectorAll('.dropdown-item').forEach(dropdownItem => {
+                    dropdownItem.classList.remove('active');
+                });
+                this.classList.add('active');
+            }
+            
+            // Filter orders based on status
+            filterOrders(this.getAttribute('data-status'));
+        });
+    });
+}
+
+function filterOrders(status) {
+    const orderCards = document.querySelectorAll('.order-card');
+    
+    orderCards.forEach(card => {
+        const badge = card.querySelector('.badge');
+        if (badge) {
+            const badgeText = badge.textContent.toLowerCase();
+            
+            if (status === 'all') {
+                card.style.display = '';
+            } else if (status === 'pending' && badgeText.includes('pending')) {
+                card.style.display = '';
+            } else if (status === 'processing' && (badgeText.includes('processing') || badgeText.includes('progress'))) {
+                card.style.display = '';
+            } else if (status === 'completed' && badgeText.includes('completed')) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        }
+    });
+}
