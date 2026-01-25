@@ -142,6 +142,7 @@ body {
 .navbar {
     background-color: var(--bs-body-bg) !important;
     border-bottom: 1px solid var(--terracotta) !important;
+    z-index: 1060 !important;
 }
 
 .navbar-brand {
@@ -255,6 +256,7 @@ footer .text-white-50 {
 .dropdown-menu {
     background-color: var(--bs-body-bg) !important;
     border-color: var(--terracotta) !important;
+    z-index: 1070 !important;
 }
 
 .dropdown-item {
@@ -406,6 +408,21 @@ footer .text-white-50 {
         color: var(--ivory-light) !important;
         text-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
+}
+
+/* Industry Cards Dark Mode Fix */
+[data-theme="dark"] .bg-white {
+    background-color: var(--deep-brown-light) !important;
+}
+
+[data-theme="dark"] .bg-white .text-muted {
+    color: var(--ivory-light) !important;
+    opacity: 1 !important;
+}
+
+[data-theme="dark"] .bg-white h5,
+[data-theme="dark"] .bg-white .fw-bold {
+    color: var(--ivory) !important;
 }
 
 /* High contrast mode support */

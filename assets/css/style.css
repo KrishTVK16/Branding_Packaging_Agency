@@ -5,20 +5,30 @@
  */
 
 :root {
-    /* Color Palette - Light Mode */
-    --color-primary: #6f42c1;
-    /* Violent Violet */
-    --color-primary-rgb: 111, 66, 193;
-    --color-secondary: #fd7e14;
-    /* Vibrant Coral */
-    --color-dark: #0b0b0b;
-    /* Rich Black */
-    --color-light: #ffffff;
-    --color-body: #495057;
-    --color-bg: #ffffff;
-    --color-bg-secondary: #f8f9fa;
-    --color-border: #e9ecef;
-    --color-card-bg: #ffffff;
+    /* Color Palette - Light Mode (BrandStudio Colors) */
+    --color-primary: #C4623A;
+    /* Terracotta - Brand Color */
+    --color-primary-rgb: 196, 98, 58;
+    --color-primary-dark: #A84F30;
+    /* Terracotta Dark */
+    --color-primary-light: #D6794F;
+    /* Terracotta Light */
+    --color-secondary: #3A2A23;
+    /* Deep Brown */
+    --color-dark: #3A2A23;
+    /* Deep Brown */
+    --color-light: #FAF7F2;
+    /* Ivory */
+    --color-body: #3A2A23;
+    /* Deep Brown */
+    --color-bg: #FAF7F2;
+    /* Ivory */
+    --color-bg-secondary: #FEFCF9;
+    /* Ivory Light */
+    --color-border: #C4623A;
+    /* Terracotta */
+    --color-card-bg: #FAF7F2;
+    /* Ivory */
 
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -33,12 +43,18 @@
 }
 
 [data-theme="dark"] {
-    --color-body: #ced4da;
-    --color-bg: #0b0b0b;
-    --color-bg-secondary: #161616;
-    --color-border: #2d2d2d;
-    --color-card-bg: #1a1a1a;
-    --color-heading: #ffffff;
+    --color-body: #FAF7F2;
+    /* Ivory */
+    --color-bg: #3A2A23;
+    /* Deep Brown */
+    --color-bg-secondary: #4A3A33;
+    /* Deep Brown Light */
+    --color-border: #C4623A;
+    /* Terracotta */
+    --color-card-bg: #4A3A33;
+    /* Deep Brown Light */
+    --color-heading: #FAF7F2;
+    /* Ivory */
 }
 
 /* Base Styles */
@@ -67,7 +83,7 @@ h6 {
 [data-theme="dark"] h4,
 [data-theme="dark"] h5,
 [data-theme="dark"] h6 {
-    color: #ffffff;
+    color: var(--color-heading) !important;
 }
 
 a {
@@ -109,6 +125,45 @@ a:hover {
 .navbar {
     background-color: var(--color-bg-secondary) !important;
     transition: background-color 0.3s ease;
+    z-index: 1060 !important;
+}
+
+.navbar-nav {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .navbar-nav .nav-link {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        padding-left: 0.3rem !important;
+        padding-right: 0.3rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    .navbar-brand span {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 1040px) {
+    .navbar .btn-outline-dark span {
+        display: none;
+    }
+    
+    .navbar .btn-outline-dark {
+        padding: 0.5rem !important;
+        min-width: auto;
+    }
 }
 
 .navbar .navbar-brand {
@@ -132,6 +187,7 @@ a:hover {
 .navbar .dropdown-menu {
     background-color: var(--color-bg) !important;
     border: 1px solid var(--color-border) !important;
+    z-index: 1070 !important;
 }
 
 .navbar .dropdown-item {
@@ -166,11 +222,11 @@ a:hover {
 }
 
 [data-theme="dark"] .navbar .navbar-brand {
-    color: #ffffff !important;
+    color: var(--color-primary) !important;
 }
 
 [data-theme="dark"] .navbar .nav-link {
-    color: #ced4da !important;
+    color: var(--color-body) !important;
 }
 
 [data-theme="dark"] .navbar .nav-link:hover,
@@ -184,7 +240,7 @@ a:hover {
 }
 
 [data-theme="dark"] .navbar .dropdown-item {
-    color: #ced4da !important;
+    color: var(--color-body) !important;
 }
 
 [data-theme="dark"] .navbar .dropdown-item:hover {
@@ -193,7 +249,7 @@ a:hover {
 }
 
 [data-theme="dark"] .navbar .btn-link {
-    color: #ced4da !important;
+    color: var(--color-body) !important;
 }
 
 [data-theme="dark"] .navbar .btn-link:hover {
@@ -201,11 +257,11 @@ a:hover {
 }
 
 [data-theme="dark"] .navbar-toggler {
-    border-color: #ced4da !important;
+    border-color: var(--color-body) !important;
 }
 
 [data-theme="dark"] .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ced4da' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FAF7F2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 .section-padding {
@@ -228,7 +284,7 @@ a:hover {
 .bg-dark-custom div,
 .bg-dark-custom .breadcrumb-item,
 .bg-dark-custom .breadcrumb-item.active {
-    color: #ffffff !important;
+    color: rgb(196, 98, 58) !important;
 }
 
 .bg-dark-custom .text-white-50 {
@@ -282,9 +338,9 @@ a:hover {
 .btn-primary:hover,
 .btn-dark:hover,
 .btn-secondary:hover {
-    background-color: #5a32a3 !important;
-    /* Darker Violet */
-    border-color: #5a32a3 !important;
+    background-color: var(--color-primary-dark) !important;
+    /* Terracotta Dark */
+    border-color: var(--color-primary-dark) !important;
     transform: translateY(-2px);
 }
 
@@ -306,6 +362,59 @@ a:hover {
     border-color: var(--color-primary) !important;
 }
 
+/* Footer Styles - Brand Consistency */
+footer {
+    font-family: var(--font-body);
+}
+
+footer h3,
+footer h5 {
+    font-family: var(--font-heading) !important;
+    font-weight: 700 !important;
+}
+
+footer .navbar-brand-text {
+    font-family: var(--font-heading) !important;
+    font-weight: 700 !important;
+}
+
+/* Footer form styling for dark background */
+footer .form-control {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+footer .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+footer .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: var(--color-primary) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.25rem rgba(196, 98, 58, 0.25) !important;
+}
+
+/* Footer social icons and links */
+footer .text-white {
+    color: #ffffff !important;
+}
+
+footer a.text-white:hover {
+    color: var(--color-primary) !important;
+}
+
+/* Ensure footer text visibility on dark background */
+footer .text-white-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+footer h3,
+footer h5 {
+    color: #ffffff !important;
+}
+
 /* RTL Support */
 [dir="rtl"] {
     text-align: right;
@@ -319,6 +428,41 @@ a:hover {
 [dir="rtl"] .me-auto {
     margin-left: auto !important;
     margin-right: 0 !important;
+}
+
+/* Contact Page Form Fields */
+.contact-form .form-control {
+    border: 2px solid var(--color-border) !important;
+    background-color: var(--color-bg) !important;
+    color: var(--color-body) !important;
+    transition: all 0.3s ease !important;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(196, 98, 58, 0.25) !important;
+    background-color: var(--color-bg) !important;
+    color: var(--color-body) !important;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Dark mode contact form */
+[data-theme="dark"] .contact-form .form-control {
+    border-color: var(--color-border) !important;
+    background-color: var(--color-bg-secondary) !important;
+    color: var(--color-body) !important;
+}
+
+[data-theme="dark"] .contact-form .form-control:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(196, 98, 58, 0.25) !important;
+}
+
+[data-theme="dark"] .contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
 }
 
 /* Resources Section Custom Styles */
@@ -373,4 +517,29 @@ a:hover {
 
 .blog .card-body .card-text {
     flex: 1;
+}
+
+/* Center Read More buttons in cards */
+.blog .card-body a.text-primary {
+    align-self: center !important;
+    margin-top: auto !important;
+    padding-top: 1rem !important;
+}
+
+/* Ensure header colors are consistent */
+.bg-dark-custom h1,
+.bg-dark-custom h2,
+.bg-dark-custom h3,
+.bg-dark-custom h4,
+.bg-dark-custom h5,
+.bg-dark-custom h6 {
+    color: #ffffff !important;
+}
+
+.bg-dark-custom p,
+.bg-dark-custom span,
+.bg-dark-custom div,
+.bg-dark-custom .breadcrumb-item,
+.bg-dark-custom .breadcrumb-item.active {
+    color: rgb(196, 98, 58) !important;
 }

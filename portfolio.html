@@ -69,7 +69,7 @@
         </div>
     </nav>
 
-    <header class="bg-dark-custom text-white section-padding" style="padding-top: 120px;">
+    <header class="bg-dark-custom section-padding" style="padding-top: 120px;">
         <div class="container text-center">
             <h1 class="display-4 fw-bold mb-3">Our Portfolio</h1>
             <p class="lead text-white-50">Branding and packaging success stories that drive results.</p>
@@ -77,14 +77,28 @@
     </header>
 
     <!-- Filter Section -->
-    <section class="section-padding bg-light-custom">
+    <section class="section-padding-sm bg-light-custom">
         <div class="container">
-            <div class="text-center mb-5">
-                <div class="btn-group" role="group">
+            <div class="text-center mb-3">
+                <!-- Desktop view - horizontal buttons -->
+                <div class="btn-group d-none d-md-block" role="group">
                     <button type="button" class="btn btn-primary-custom active" data-filter="all">All Projects</button>
                     <button type="button" class="btn btn-outline-primary" data-filter="branding">Branding</button>
                     <button type="button" class="btn btn-outline-primary" data-filter="packaging">Packaging</button>
                     <button type="button" class="btn btn-outline-primary" data-filter="digital">Digital</button>
+                </div>
+                
+                <!-- Mobile view - dropdown -->
+                <div class="dropdown d-md-none">
+                    <button class="btn btn-primary-custom dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span id="filter-label">All Projects</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" href="#" data-filter="all">All Projects</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="branding">Branding</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="packaging">Packaging</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="digital">Digital</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -100,7 +114,7 @@
                         <div class="overflow-hidden rounded-top">
                             <img src="portfolio_vogue_co_1769049914702.png" class="img-fluid w-100" alt="Vogue & Co" style="height: 300px; object-fit: cover;">
                         </div>
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="text-align: center;">
                             <div class="text-uppercase text-primary small fw-bold mb-2">Fashion Branding</div>
                             <h4 class="card-title fw-bold mb-3">Vogue & Co</h4>
                             <p class="card-text text-muted mb-4">Complete brand identity redesign for luxury fashion retailer.</p>
@@ -115,8 +129,8 @@
                         <div class="overflow-hidden rounded-top">
                             <img src="portfolio_eco_foods_1769049950091.png" class="img-fluid w-100" alt="Eco Foods" style="height: 300px; object-fit: cover;">
                         </div>
-                        <div class="card-body p-4">
-                            <div class="text-uppercase text-secondary small fw-bold mb-2">Food Packaging</div>
+                        <div class="card-body p-4" style="text-align: center;">
+                            <div class="text-uppercase text-primary small fw-bold mb-2">Food Packaging</div>
                             <h4 class="card-title fw-bold mb-3">Eco Foods</h4>
                             <p class="card-text text-muted mb-4">Sustainable packaging design for organic food products.</p>
                             <a href="portfolio-details.html" class="btn btn-primary-custom">View Case Study</a>
@@ -130,7 +144,7 @@
                         <div class="overflow-hidden rounded-top">
                             <img src="portfolio_turbo_saas_1769049931034.png" class="img-fluid w-100" alt="Turbo SaaS" style="height: 300px; object-fit: cover;">
                         </div>
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="text-align: center;">
                             <div class="text-uppercase text-primary small fw-bold mb-2">Digital Brand</div>
                             <h4 class="card-title fw-bold mb-3">Turbo SaaS</h4>
                             <p class="card-text text-muted mb-4">Brand identity and UI design for tech startup.</p>
@@ -145,8 +159,8 @@
                         <div class="overflow-hidden rounded-top">
                             <img src="portfolio_nova_finance_1769049892738.png" class="img-fluid w-100" alt="Nova Finance" style="height: 300px; object-fit: cover;">
                         </div>
-                        <div class="card-body p-4">
-                            <div class="text-uppercase text-secondary small fw-bold mb-2">Financial Services</div>
+                        <div class="card-body p-4" style="text-align: center;">
+                            <div class="text-uppercase text-primary small fw-bold mb-2">Financial Services</div>
                             <h4 class="card-title fw-bold mb-3">Nova Finance</h4>
                             <p class="card-text text-muted mb-4">Modern rebranding for fintech company.</p>
                             <a href="portfolio-details.html" class="btn btn-primary-custom">View Case Study</a>
@@ -160,7 +174,7 @@
                         <div class="overflow-hidden rounded-top">
                             <img src="pack_beverage_1769053987633.png" class="img-fluid w-100" alt="Aqua Pure" style="height: 300px; object-fit: cover;">
                         </div>
-                        <div class="card-body p-4">
+                        <div class="card-body p-4" style="text-align: center;">
                             <div class="text-uppercase text-primary small fw-bold mb-2">Beverage Packaging</div>
                             <h4 class="card-title fw-bold mb-3">Aqua Pure</h4>
                             <p class="card-text text-muted mb-4">Premium water bottle packaging design.</p>
@@ -175,8 +189,8 @@
                         <div class="overflow-hidden rounded-top">
                             <img src="saas_dashboard_mockup_1769049857716.png" class="img-fluid w-100" alt="ShopSmart" style="height: 300px; object-fit: cover;">
                         </div>
-                        <div class="card-body p-4">
-                            <div class="text-uppercase text-secondary small fw-bold mb-2">E-commerce</div>
+                        <div class="card-body p-4" style="text-align: center;">
+                            <div class="text-uppercase text-primary small fw-bold mb-2">E-commerce</div>
                             <h4 class="card-title fw-bold mb-3">ShopSmart</h4>
                             <p class="card-text text-muted mb-4">Complete brand system for online marketplace.</p>
                             <a href="portfolio-details.html" class="btn btn-primary-custom">View Case Study</a>
@@ -197,13 +211,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-3">
+    <footer class="bg-dark-custom text-white pt-5 pb-3">
         <div class="container">
             <div class="row g-4 mb-5">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center gap-2 mb-3">
                         <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
-                        <h3 class="fw-bold mb-0 text-white">BrandStudio</h3>
+                        <h3 class="fw-bold mb-0 navbar-brand-text text-primary">BrandStudio</h3>
                     </div>
                     <p class="text-white-50">A full-service branding and packaging agency dedicated to transforming businesses into iconic brands.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -214,7 +228,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <h5 class="fw-bold mb-3">Company</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
                         <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
@@ -223,7 +237,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <h5 class="fw-bold mb-3 text-white">Services</h5>
+                    <h5 class="fw-bold mb-3">Services</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Brand Strategy</a></li>
                         <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Packaging</a></li>
@@ -232,7 +246,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
                     <p class="text-white-50">Subscribe to get the latest design trends and news.</p>
                     <form class="d-flex gap-2">
                         <input type="email" class="form-control" placeholder="Enter your email">
@@ -244,6 +258,12 @@
                 <p class="mb-0 text-white-50 small">&copy; 2026 BrandStudio. All rights reserved.</p>
             </div>
         </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary-custom position-fixed bottom-0 end-0 m-4 shadow-lg rounded-circle"
+            style="width: 45px; height: 45px; display:flex; align-items:center; justify-content:center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -323,19 +343,57 @@
                 text-shadow: 0 1px 2px rgba(0,0,0,0.3);
             }
         }
+        
+        /* Dropdown for screens 600px and below */
+        @media (max-width: 600px) {
+            .dropdown-menu {
+                width: 100%;
+                min-width: 200px;
+            }
+            
+            .dropdown-item.active {
+                background-color: var(--bs-primary) !important;
+                color: white !important;
+            }
+            
+            [data-theme="dark"] .dropdown-item.active {
+                background-color: var(--terracotta) !important;
+            }
+        }
     </style>
     
     <script>
         // Portfolio filter functionality
         document.querySelectorAll('[data-filter]').forEach(button => {
-            button.addEventListener('click', function() {
-                // Update active button
-                document.querySelectorAll('[data-filter]').forEach(btn => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Update active button for desktop
+                document.querySelectorAll('.btn-group [data-filter]').forEach(btn => {
                     btn.classList.remove('active', 'btn-primary-custom');
                     btn.classList.add('btn-outline-primary');
                 });
-                this.classList.remove('btn-outline-primary');
-                this.classList.add('active', 'btn-primary-custom');
+                
+                // Update active item for mobile dropdown
+                document.querySelectorAll('.dropdown-item[data-filter]').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Set current element as active
+                if (this.classList.contains('dropdown-item')) {
+                    this.classList.add('active');
+                    // Update dropdown button text
+                    document.getElementById('filter-label').textContent = this.textContent;
+                } else {
+                    this.classList.remove('btn-outline-primary');
+                    this.classList.add('active', 'btn-primary-custom');
+                    // Update dropdown button text for mobile
+                    const mobileItem = document.querySelector(`.dropdown-item[data-filter="${this.dataset.filter}"]`);
+                    if (mobileItem) {
+                        document.getElementById('filter-label').textContent = mobileItem.textContent;
+                        mobileItem.classList.add('active');
+                    }
+                }
                 
                 // Filter items
                 const filter = this.dataset.filter;

@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageTitle = document.getElementById('pageTitle');
     const sidebarLinks = document.querySelectorAll('.sidebar .nav-link[data-tab]');
 
-    // Initialize sidebar state based on screen size
+    // Initialize sidebar state based on screen size//650 changed to 800
     function initializeSidebarState() {
-        if (window.innerWidth >= 650 && window.innerWidth <= 767.98) {
+        if (window.innerWidth >= 800 && window.innerWidth <= 1050) {
             // Tablet mode - desktop layout maintained
             sidebar.classList.remove('collapsed', 'expanded', 'show');
             if (tabletSidebarToggle) {
                 tabletSidebarToggle.style.display = 'none';
             }
-        } else if (window.innerWidth < 650) {
+        } else if (window.innerWidth < 800) {
             // Mobile mode - start hidden
             sidebar.classList.remove('collapsed', 'expanded', 'show');
             if (sidebarOverlay) {
@@ -142,8 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 tabContent.classList.add('show', 'active');
             }
 
-            // Close mobile sidebar after selecting a tab
-            if (window.innerWidth < 650) {
+            // Close mobile sidebar after selecting a tab//650 changed to 800
+            if (window.innerWidth < 800) {
                 sidebar.classList.remove('show');
                 if (sidebarOverlay) {
                     sidebarOverlay.classList.remove('show');

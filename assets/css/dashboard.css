@@ -163,7 +163,7 @@ body[data-page="user"] .sidebar hr {
 }
 
 /* Responsive sidebar - Adjusted breakpoint for 650px minimum */
-@media (max-width: 649.98px) {
+@media (max-width: 800px) {
     .sidebar {
         transform: translateX(-100%);
     }
@@ -208,7 +208,7 @@ body[data-page="user"] .sidebar hr {
 }
 
 /* Tablet mode (650px - 767px) - Desktop layout maintained */
-@media (min-width: 650px) and (max-width: 767.98px) {
+@media (min-width: 800px) and (max-width: 1050px) {
     .sidebar {
         width: 280px;
         transform: translateX(0);
@@ -258,7 +258,7 @@ body[data-page="user"] .sidebar hr {
 }
 
 /* Mobile mode (<650px) - Off-canvas */
-@media (max-width: 649.98px) {
+@media (max-width: 800px) {
     .sidebar {
         width: 280px;
         transform: translateX(-100%);
