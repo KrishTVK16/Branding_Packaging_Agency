@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - BrandStudio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/Logo.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/Logo.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar (Standard) -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light-custom shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                <span class="fs-4 fw-bold text-primary">BrandStudio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1 (Creative)</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2 (Digital)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0">
+                        <i class="bi bi-moon-fill fs-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-dark-custom text-white section-padding text-center" style="padding-top: 120px;">
+        <div class="container">
+            <!-- Dynamic ID: service-title -->
+            <h1 class="display-3 fw-bold mb-3" id="service-title">Loading...</h1>
+            <!-- Dynamic ID: service-subtitle -->
+            <p class="lead text-white-50" id="service-subtitle">Please wait while we fetch the details.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Dynamic ID: service-image -->
+                    <div class="rounded-4 overflow-hidden shadow-lg mb-5 animate-slide-up">
+                        <img id="service-image" src="" class="img-fluid w-100 object-fit-cover" alt="Service Image"
+                            style="max-height: 500px; width: 100%; display: none;">
+                    </div>
+
+                    <div class="row g-5">
+                        <div class="col-lg-8">
+                            <h2 class="fw-bold mb-4">Overview</h2>
+                            <!-- Dynamic ID: service-overview -->
+                            <div id="service-overview" class="lead text-muted mb-5">
+                                Loading content...
+                            </div>
+
+                            <h3 class="fw-bold mb-4">Our Approach</h3>
+                            <!-- Dynamic ID: service-process -->
+                            <div id="service-process" class="mb-5">
+                                <!-- Process steps will be injected here -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="bg-light-custom p-4 rounded-4 sticky-top" style="top: 100px;">
+                                <h4 class="fw-bold mb-3">Key Benefits</h4>
+                                <!-- Dynamic ID: service-benefits -->
+                                <ul class="list-unstyled mb-4" id="service-benefits">
+                                    <!-- Benefits list -->
+                                </ul>
+
+                                <hr class="my-4 border-secondary opacity-25">
+
+                                <h4 class="fw-bold mb-3">Ready to Start?</h4>
+                                <p class="text-muted small mb-4">Contact us for a custom quote tailored to your project
+                                    needs.</p>
+                                <a href="contact.html" class="btn btn-primary-custom w-100">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Have a Project in Mind?</h2>
+            <p class="lead mb-5 opacity-75">Let's discuss how we can bring your vision to life.</p>
+            <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-custom pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
+                        <h3 class="fw-bold mb-0 navbar-brand-text text-primary">BrandStudio</h3>
+                    </div>
+                    <p class="text-white-50">A full-service branding and packaging agency.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 ms-auto">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <p class="text-white-50">hello@brandingagency.com</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center">
+                <p class="mb-0 text-white-50 small">&copy; 2026 BrandStudio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/service-loader.js"></script> <!-- Dynamic Content Script -->
+</body>
+
+</html>
