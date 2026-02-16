@@ -147,8 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // In a real app, you'd check if file exists or use specific assets.
         // We will use a smart placeholder for now to ensure visibility.
         const imgElement = document.getElementById('service-image');
-        imgElement.src = `https://placehold.co/1200x600/212529/FFF?text=${encodeURIComponent(data.title)}+Header`;
-        // If user has provided assets, we could switch this. For now, placeholder confirms logic works.
+        imgElement.src = data.image;
         imgElement.style.display = 'block';
 
         // Update Benefits

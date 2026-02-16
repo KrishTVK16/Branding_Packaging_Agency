@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - BrandStudio</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/Logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/Logo.png" sizes="16x16">
@@ -28,9 +28,15 @@
                 <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
                 <span class="fs-4 fw-bold text-primary">BrandStudio</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 mobile-nav-tools">
+                <button class="btn btn-link text-dark p-0 border-0 theme-toggle d-lg-none" type="button"
+                    aria-label="Toggle theme">
+                    <i class="bi bi-moon-fill fs-5"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
@@ -50,21 +56,26 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-3">
-                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0">
+                    <button class="btn btn-link text-dark p-0 border-0 theme-toggle d-none d-lg-block" type="button"
+                        aria-label="Toggle theme">
                         <i class="bi bi-moon-fill fs-5"></i>
                     </button>
                     <div class="dropdown">
-                        <button class="btn btn-outline-dark p-2 border dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <button class="btn btn-outline-dark p-2 border dropdown-toggle d-flex align-items-center gap-2"
+                            type="button" data-bs-toggle="dropdown">
                             <i class="bi bi-person-circle fs-5"></i>
                             <span>Profile</span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="admin.html"><i class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
-                            <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a></li>
-                            <li><a class="dropdown-item" href="register.html"><i class="bi bi-person-plus me-2"></i>Get Started</a></li>
+                            <li><a class="dropdown-item" href="admin.html"><i
+                                        class="bi bi-grid-1x2-fill me-2"></i>Dashboard</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i
+                                        class="bi bi-box-arrow-in-right me-2"></i>Login</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="bi bi-person-plus me-2"></i>Get
+                                    Started</a></li>
                         </ul>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -78,18 +89,71 @@
 
     <section class="section-padding blog">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-4">
+                <!-- Sidebar -->
+                <div class="col-lg-4 order-lg-2">
+                    <div class="sticky-top" style="top: 100px;">
+                        <!-- Search -->
+                        <div class="card border-0 shadow-sm p-4 mb-4 bg-light-custom">
+                            <h5 class="fw-bold mb-3">Search</h5>
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <button class="btn btn-primary-custom" type="submit"><i
+                                            class="bi bi-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Topics -->
+                        <div class="card border-0 shadow-sm p-4 mb-4 bg-light-custom">
+                            <h5 class="fw-bold mb-3">Topics</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted text-decoration-none d-flex justify-content-between">Design
+                                        Trends <span>(5)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted text-decoration-none d-flex justify-content-between">Packaging
+                                        <span>(3)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted text-decoration-none d-flex justify-content-between">Brand
+                                        Strategy <span>(7)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted text-decoration-none d-flex justify-content-between">Digital
+                                        Marketing <span>(2)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Trending Stories -->
+                        <div class="card border-0 shadow-sm p-4 bg-light-custom">
+                            <h5 class="fw-bold mb-3">Trending Stories</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#"
+                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Branding</a>
+                                <a href="#"
+                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Design</a>
+                                <a href="#"
+                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#UX/UI</a>
+                                <a href="#"
+                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Marketing</a>
+                                <a href="#"
+                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Business</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Blog List -->
-                <div class="col-lg-8">
+                <div class="col-lg-8 order-lg-1">
                     <div class="row g-4 mb-5">
                         <!-- Post 1 -->
                         <div class="col-md-6">
                             <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                                <img src="assets/Blog1.jfif" class="card-img-top"
-                                    alt="Blog Post">
+                                <img src="assets/Blog1.jfif" class="card-img-top" alt="Blog Post">
                                 <div class="card-body p-4">
                                     <div class="text-uppercase text-primary small fw-bold mb-2">Design Trends</div>
-                                    <h4 class="card-title fw-bold mb-3"><a href="#" class="text-reset text-decoration-none">Color Trends for 2026</a></h4>
+                                    <h4 class="card-title fw-bold mb-3"><a href="#"
+                                            class="text-reset text-decoration-none">Color Trends for 2026</a></h4>
                                     <p class="card-text text-muted">Discover the colors that will dominate the branding
                                         world in the upcoming year.</p>
                                     <a href="#" class="fw-bold text-decoration-none text-primary">Read More</a>
@@ -99,11 +163,11 @@
                         <!-- Post 2 -->
                         <div class="col-md-6">
                             <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                                <img src="assets/Blog2.jpg" class="card-img-top"
-                                    alt="Blog Post">
+                                <img src="assets/Blog2.jpg" class="card-img-top" alt="Blog Post">
                                 <div class="card-body p-4">
                                     <div class="text-uppercase text-primary small fw-bold mb-2">Packaging</div>
-                                    <h4 class="card-title fw-bold mb-3"><a href="#" class="text-reset text-decoration-none">Sustainable Packaging 101</a></h4>
+                                    <h4 class="card-title fw-bold mb-3"><a href="#"
+                                            class="text-reset text-decoration-none">Sustainable Packaging 101</a></h4>
                                     <p class="card-text text-muted">How to make your product packaging eco-friendly
                                         without sacrificing style.</p>
                                     <a href="#" class="fw-bold text-decoration-none text-primary">Read More</a>
@@ -113,11 +177,11 @@
                         <!-- Post 3 -->
                         <div class="col-md-6">
                             <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                                <img src="assets/Blog3.jpg"
-                                    class="card-img-top" alt="Blog Post">
+                                <img src="assets/Blog3.jpg" class="card-img-top" alt="Blog Post">
                                 <div class="card-body p-4">
                                     <div class="text-uppercase text-primary small fw-bold mb-2">Strategy</div>
-                                    <h4 class="card-title fw-bold mb-3"><a href="#" class="text-reset text-decoration-none">Why Typography Matters</a></h4>
+                                    <h4 class="card-title fw-bold mb-3"><a href="#"
+                                            class="text-reset text-decoration-none">Why Typography Matters</a></h4>
                                     <p class="card-text text-muted">The subtle psychological impact of font choices on
                                         your brand perception.</p>
                                     <a href="#" class="fw-bold text-decoration-none text-primary">Read More</a>
@@ -127,8 +191,7 @@
                         <!-- Post 4 -->
                         <div class="col-md-6">
                             <div class="card h-100 border-0 shadow-sm hover-up transition-all">
-                                <img src="assets/Blog4.webp"
-                                    class="card-img-top" alt="Blog Post">
+                                <img src="assets/Blog4.webp" class="card-img-top" alt="Blog Post">
                                 <div class="card-body p-4">
                                     <div class="text-uppercase text-primary small fw-bold mb-2">Tech</div>
                                     <h4 class="card-title fw-bold mb-3"><a href="#"
@@ -157,59 +220,6 @@
                         </ul>
                     </nav>
                 </div>
-
-                <!-- Sidebar -->
-                <div class="col-lg-4">
-                    <div class="sticky-top" style="top: 100px;">
-                        <!-- Search -->
-                        <div class="card border-0 shadow-sm p-4 mb-4 bg-light-custom">
-                            <h5 class="fw-bold mb-3">Search</h5>
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <button class="btn btn-primary-custom" type="submit"><i
-                                            class="bi bi-search"></i></button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- Categories -->
-                        <div class="card border-0 shadow-sm p-4 mb-4 bg-light-custom">
-                            <h5 class="fw-bold mb-3">Categories</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="#"
-                                        class="text-muted text-decoration-none d-flex justify-content-between">Design
-                                        Trends <span>(5)</span></a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-muted text-decoration-none d-flex justify-content-between">Packaging
-                                        <span>(3)</span></a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-muted text-decoration-none d-flex justify-content-between">Brand
-                                        Strategy <span>(7)</span></a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-muted text-decoration-none d-flex justify-content-between">Digital
-                                        Marketing <span>(2)</span></a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Tags -->
-                        <div class="card border-0 shadow-sm p-4 bg-light-custom">
-                            <h5 class="fw-bold mb-3">Tags</h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <a href="#"
-                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Branding</a>
-                                <a href="#"
-                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Design</a>
-                                <a href="#"
-                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#UX/UI</a>
-                                <a href="#"
-                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Marketing</a>
-                                <a href="#"
-                                    class="badge bg-white text-dark border fw-normal text-decoration-none p-2">#Business</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -219,10 +229,10 @@
         <div class="container">
             <div class="row g-4 mb-5">
                 <div class="col-lg-4">
-                    <div class="d-flex align-items-center gap-2 mb-3">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                         <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
-                        <h3 class="fw-bold mb-0 navbar-brand-text text-primary">BrandStudio</h3>
-                    </div>
+                        <span class="fs-4 fw-bold text-primary">BrandStudio</span>
+                    </a>
                     <p class="text-white-50">A full-service branding and packaging agency dedicated to transforming
                         businesses into iconic brands.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -263,9 +273,7 @@
                     </form>
                 </div>
             </div>
-            <div class="border-top border-secondary pt-3 text-center">
-                <p class="mb-0 text-white-50 small">&copy; 2026 BrandStudio. All rights reserved.</p>
-            </div>
+        </div>
         </div>
     </footer>
 

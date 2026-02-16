@@ -29,7 +29,7 @@
 }
 
 .sidebar .nav-link {
-    color: var(--bs-body-color);
+    color: white !important;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     margin-bottom: 0.25rem;
@@ -51,8 +51,8 @@
 
 /* Admin specific sidebar styles */
 body[data-page="admin"] .sidebar {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-right: 1px solid #667eea;
+    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%);
+    border-right: 1px solid var(--terracotta);
 }
 
 body[data-page="admin"] .sidebar .navbar-brand span {
@@ -76,14 +76,18 @@ body[data-page="admin"] .sidebar .nav-link.active i {
     color: white !important;
 }
 
+.sidebar .nav-link i {
+    color: white !important;
+}
+
 body[data-page="admin"] .sidebar hr {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* User specific sidebar styles */
 body[data-page="user"] .sidebar {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    border-right: 1px solid #f093fb;
+    background: linear-gradient(135deg, var(--deep-brown-light) 0%, var(--deep-brown) 100%);
+    border-right: 1px solid var(--terracotta);
 }
 
 body[data-page="user"] .sidebar .navbar-brand span {
@@ -428,18 +432,18 @@ body[data-page="user"] .sidebar hr {
 [data-theme="dark"] .form-control:focus {
     background-color: #374151 !important;
     color: #f9fafb !important;
-    border-color: #6366f1 !important;
+    border-color: var(--terracotta) !important;
 }
 
 [data-theme="dark"] .btn-primary-custom {
-    background-color: #6366f1 !important;
-    border-color: #6366f1 !important;
+    background-color: var(--terracotta) !important;
+    border-color: var(--terracotta) !important;
     color: #ffffff !important;
 }
 
 [data-theme="dark"] .btn-primary-custom:hover {
-    background-color: #4f46e5 !important;
-    border-color: #4f46e5 !important;
+    background-color: var(--terracotta-dark) !important;
+    border-color: var(--terracotta-dark) !important;
     color: #ffffff !important;
 }
 
@@ -648,14 +652,14 @@ body[data-page="user"] .sidebar hr {
 
 /* Dark mode admin sidebar */
 [data-theme="dark"][data-page="admin"] .sidebar {
-    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%) !important;
-    border-right-color: #4c51bf !important;
+    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%) !important;
+    border-right-color: var(--terracotta) !important;
 }
 
 /* Dark mode user sidebar */
 [data-theme="dark"][data-page="user"] .sidebar {
-    background: linear-gradient(135deg, #d53f8c 0%, #c53030 100%) !important;
-    border-right-color: #d53f8c !important;
+    background: linear-gradient(135deg, var(--deep-brown-light) 0%, var(--deep-brown) 100%) !important;
+    border-right-color: var(--terracotta) !important;
 }
 
 /* Dark mode tablet toggle button */
@@ -675,38 +679,38 @@ body[data-page="user"] .sidebar hr {
     .main-content {
         padding: 0.75rem;
     }
-    
+
     .stat-card {
         padding: 0.75rem;
         margin-bottom: 1rem;
     }
-    
+
     .stat-card h3 {
         font-size: 1.1rem;
     }
-    
+
     .stat-card p {
         font-size: 0.65rem;
     }
-    
+
     .topbar {
         margin-bottom: 1rem;
         padding-bottom: 0.75rem;
     }
-    
+
     .topbar h2 {
         font-size: 1rem;
     }
-    
+
     .table-responsive {
         font-size: 0.75rem;
     }
-    
+
     .btn-sm {
         padding: 0.25rem 0.5rem;
         font-size: 0.75rem;
     }
-    
+
     .dropdown-menu {
         font-size: 0.875rem;
     }

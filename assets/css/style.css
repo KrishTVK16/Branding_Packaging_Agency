@@ -58,6 +58,12 @@
 }
 
 /* Base Styles */
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--color-body);
@@ -149,20 +155,88 @@ a:hover {
         padding-right: 0.3rem !important;
         font-size: 0.85rem !important;
     }
-    
+
     .navbar-brand span {
         font-size: 1.2rem !important;
     }
 }
 
-@media (max-width: 1040px) {
-    .navbar .btn-outline-dark span {
-        display: none;
+@media (max-width: 991px) {
+    .navbar-collapse {
+        max-height: 75vh;
+        overflow-y: auto;
+        padding-bottom: 2rem;
     }
-    
-    .navbar .btn-outline-dark {
-        padding: 0.5rem !important;
-        min-width: auto;
+
+    .navbar .navbar-brand {
+        width: 50% !important;
+        margin-right: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+
+    .mobile-nav-tools {
+        width: 50% !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        width: 100%;
+    }
+
+    /* Mobile tool area expansion */
+    .collapse .d-flex.align-items-center.gap-3 {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 1rem !important;
+        padding-top: 1.5rem;
+    }
+
+    .collapse .dropdown,
+    .collapse .dropdown-toggle {
+        width: 100% !important;
+    }
+
+    .collapse .dropdown-toggle {
+        justify-content: space-between !important;
+    }
+
+    /* Flatten dropdowns on mobile */
+    .navbar-collapse .dropdown-menu {
+        position: static !important;
+        float: none !important;
+        width: 100% !important;
+        border: none !important;
+        box-shadow: none !important;
+        background-color: rgba(var(--color-primary-rgb), 0.03) !important;
+        margin-top: 0.5rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .navbar-collapse .dropdown-item {
+        padding: 0.6rem 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    /* Mobile toggle alignment remains constant */
+    .mobile-nav-tools .theme-toggle {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
