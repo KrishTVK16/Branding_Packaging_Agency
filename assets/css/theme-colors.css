@@ -138,7 +138,8 @@
     color: var(--ivory) !important;
 }
 
-[data-theme="dark"] .btn-outline-dark {
+[data-theme="dark"] .btn-outline-dark,
+[data-theme="dark"] .btn-outline-light {
     color: var(--ivory) !important;
     border-color: var(--ivory) !important;
 }
@@ -148,8 +149,45 @@
     color: var(--deep-brown) !important;
 }
 
-[data-theme="dark"] .bg-white {
+[data-theme="dark"] .bg-white,
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] .card-inner.bg-white {
     background-color: var(--deep-brown-light) !important;
+    color: var(--ivory) !important;
+}
+
+/* Force dark overlay for cards with inline white gradients */
+[data-theme="dark"] .card[style*="rgba(255,255,255,0.9)"] {
+    background-image: linear-gradient(rgba(74, 58, 51, 0.9), rgba(74, 58, 51, 0.9)) !important;
+}
+
+/* Accordion Dark Mode Fixes */
+[data-theme="dark"] .accordion-item {
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
+}
+
+[data-theme="dark"] .accordion-button {
+    background-color: var(--deep-brown-light) !important;
+    color: var(--ivory) !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: var(--terracotta) !important;
+    color: white !important;
+}
+
+[data-theme="dark"] .accordion-button::after {
+    filter: invert(1) brightness(2);
+}
+
+/* Subtle background overrides */
+[data-theme="dark"] .bg-primary-subtle,
+[data-theme="dark"] .bg-info-subtle,
+[data-theme="dark"] .bg-success-subtle,
+[data-theme="dark"] .bg-warning-subtle {
+    background-color: var(--deep-brown-light) !important;
+    border: 1px solid var(--terracotta) !important;
     color: var(--ivory) !important;
 }
 

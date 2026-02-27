@@ -404,13 +404,13 @@ body[data-page="user"] .sidebar hr {
 }
 
 [data-theme="dark"] .card {
-    background-color: #1f2937 !important;
-    border-color: #374151 !important;
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
 }
 
 [data-theme="dark"] .card-header {
-    background-color: #374151 !important;
-    border-color: #4b5563 !important;
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
 }
 
 [data-theme="dark"] .card-header h5,
@@ -419,14 +419,14 @@ body[data-page="user"] .sidebar hr {
 }
 
 [data-theme="dark"] .form-control {
-    background-color: #374151 !important;
-    color: #f9fafb !important;
-    border-color: #4b5563 !important;
+    background-color: var(--deep-brown-light) !important;
+    color: var(--ivory) !important;
+    border-color: var(--terracotta) !important;
 }
 
 [data-theme="dark"] .form-control::placeholder {
-    color: #9ca3af !important;
-    opacity: 1 !important;
+    color: var(--ivory) !important;
+    opacity: 0.6 !important;
 }
 
 [data-theme="dark"] .form-control:focus {
@@ -515,9 +515,9 @@ body[data-page="user"] .sidebar hr {
 
 /* Dark mode fixes for message interface */
 [data-theme="dark"] .list-group-item {
-    background-color: #374151 !important;
-    border-color: #4b5563 !important;
-    color: #e5e7eb !important;
+    background-color: var(--deep-brown-light) !important;
+    border-color: var(--terracotta) !important;
+    color: var(--ivory) !important;
 }
 
 [data-theme="dark"] .list-group-item.active {
@@ -567,11 +567,11 @@ body[data-page="user"] .sidebar hr {
 }
 
 [data-theme="dark"] .bg-light-custom {
-    background-color: #374151 !important;
+    background-color: var(--deep-brown-light) !important;
 }
 
 [data-theme="dark"] .bg-white {
-    background-color: #1f2937 !important;
+    background-color: var(--deep-brown-light) !important;
 }
 
 /* Dark mode fixes for message sender names and details */
