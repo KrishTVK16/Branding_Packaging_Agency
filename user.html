@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard - BrandStudio</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/Logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/Logo.png" sizes="16x16">
@@ -24,21 +24,22 @@
     <div class="dashboard-container">
         <!-- Mobile Overlay -->
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
-        
+
         <!-- Sidebar -->
         <aside class="sidebar bg-light-custom text-dark" id="sidebar">
             <!-- Tablet Toggle Button -->
             <!-- <button class="sidebar-toggle-btn d-none d-md-block d-lg-none" id="tabletSidebarToggle">
                 <i class="bi bi-chevron-right"></i>
             </button> -->
-            
+
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <img src="assets/Logo.png" alt="BrandStudio" class="me-2" style="height: 40px; width: auto;">
                 <span class="fs-4 fw-bold text-primary">BrandStudio</span>
             </a>
 
             <nav class="nav flex-column mt-3">
-                <a class="nav-link active" href="#" data-tab="dashboard" data-bs-toggle="tab" data-bs-target="#dashboard">
+                <a class="nav-link active" href="#" data-tab="dashboard" data-bs-toggle="tab"
+                    data-bs-target="#dashboard">
                     <i class="bi bi-person-circle"></i> My Dashboard
                 </a>
                 <a class="nav-link" href="#" data-tab="orders" data-bs-toggle="tab" data-bs-target="#orders">
@@ -54,6 +55,9 @@
                     <i class="bi bi-person"></i> Profile
                 </a>
                 <hr class="my-3">
+                <a class="nav-link text-danger" href="index.html">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
                 <!-- <a class="nav-link" href="admin.html">
                     <i class="bi bi-grid-1x2-fill"></i> Admin Dashboard
                 </a> -->
@@ -75,20 +79,9 @@
                     <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0">
                         <i class="bi bi-moon-fill fs-5"></i>
                     </button>
-                    <div class="dropdown">
-                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
-                            data-bs-toggle="dropdown">
-                            <img src="https://placehold.co/40/e9ecef/6f42c1?text=JD" alt="User"
-                                class="rounded-circle me-2">
-                            <span class="fw-bold text-dark d-none d-lg-block">John Doe</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end shadow">
-                            <li><a class="dropdown-item" href="admin.html">Admin</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-danger" href="index.html">Logout</a></li>
-                        </ul>
+                    <div class="d-flex align-items-center text-decoration-none">
+                        <img src="https://placehold.co/40/e9ecef/6f42c1?text=JD" alt="User" class="rounded-circle me-2">
+                        <span class="fw-bold text-dark d-none d-lg-block">John Doe</span>
                     </div>
                 </div>
             </div>
@@ -127,7 +120,8 @@
                                         <i class="bi bi-cart"></i>
                                     </div>
                                 </div>
-                                <span class="badge bg-success-subtle text-success"><i class="bi bi-arrow-up"></i> +2 this month</span>
+                                <span class="badge bg-success-subtle text-success"><i class="bi bi-arrow-up"></i> +2
+                                    this month</span>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -155,7 +149,8 @@
                                         <i class="bi bi-currency-dollar"></i>
                                     </div>
                                 </div>
-                                <span class="badge bg-success-subtle text-success"><i class="bi bi-arrow-up"></i> +15% vs last quarter</span>
+                                <span class="badge bg-success-subtle text-success"><i class="bi bi-arrow-up"></i> +15%
+                                    vs last quarter</span>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -176,9 +171,11 @@
 
                     <!-- Recent Orders -->
                     <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                        <div
+                            class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
                             <h5 class="fw-bold mb-0">My Recent Orders</h5>
-                            <a href="#" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('orders-tab').click()">View All</a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"
+                                onclick="document.getElementById('orders-tab').click()">View All</a>
                         </div>
                         <div class="card-body p-4">
                             <div class="row g-3">
@@ -186,7 +183,8 @@
                                     <div class="order-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-001</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#ORD-001</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Logo Design</h6>
                                             </div>
                                         </div>
@@ -195,7 +193,8 @@
                                                 <p class="fw-bold text-dark mb-0">$999</p>
                                                 <span class="badge bg-success">Completed</span>
                                             </div>
-                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                            <button class="btn btn-sm btn-link text-dark"><i
+                                                    class="bi bi-three-dots-vertical"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +202,8 @@
                                     <div class="order-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-005</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#ORD-005</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Packaging Bundle</h6>
                                             </div>
                                         </div>
@@ -212,7 +212,8 @@
                                                 <p class="fw-bold text-dark mb-0">$2,499</p>
                                                 <span class="badge bg-info text-white">In Progress</span>
                                             </div>
-                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                            <button class="btn btn-sm btn-link text-dark"><i
+                                                    class="bi bi-three-dots-vertical"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +225,8 @@
                 <!-- Orders Tab -->
                 <div class="tab-pane fade" id="orders" role="tabpanel">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-header bg-white border-0 py-3 d-flex flex-wrap gap-3 justify-content-between align-items-center">
+                        <div
+                            class="card-header bg-white border-0 py-3 d-flex flex-wrap gap-3 justify-content-between align-items-center">
                             <!-- Desktop: Button Group -->
                             <div class="btn-group d-none d-md-flex">
                                 <button class="btn btn-secondary active" data-status="all">All</button>
@@ -232,22 +234,26 @@
                                 <button class="btn btn-outline-secondary" data-status="processing">In Progress</button>
                                 <button class="btn btn-outline-secondary" data-status="completed">Completed</button>
                             </div>
-                            
+
                             <!-- Mobile: Dropdown -->
                             <div class="dropdown d-md-none">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
                                     <i class="bi bi-funnel"></i> <span id="statusLabel">All Orders</span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item active" href="#" data-status="all">All Orders</a></li>
                                     <li><a class="dropdown-item" href="#" data-status="pending">Pending Orders</a></li>
-                                    <li><a class="dropdown-item" href="#" data-status="processing">In Progress Orders</a></li>
-                                    <li><a class="dropdown-item" href="#" data-status="completed">Completed Orders</a></li>
+                                    <li><a class="dropdown-item" href="#" data-status="processing">In Progress
+                                            Orders</a></li>
+                                    <li><a class="dropdown-item" href="#" data-status="completed">Completed Orders</a>
+                                    </li>
                                 </ul>
                             </div>
-                            
+
                             <div>
-                                <button class="btn btn-primary-custom btn-sm"><i class="bi bi-download"></i> Export</button>
+                                <button class="btn btn-primary-custom btn-sm"><i class="bi bi-download"></i>
+                                    Export</button>
                             </div>
                         </div>
                         <div class="card-body p-4">
@@ -256,7 +262,8 @@
                                     <div class="order-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-001</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#ORD-001</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Logo Design</h6>
                                             </div>
                                         </div>
@@ -268,7 +275,8 @@
                                                     <small class="text-muted">Delivered on Jan 15, 2026</small>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                                            <button class="btn btn-sm btn-outline-primary"><i
+                                                    class="bi bi-eye"></i></button>
                                         </div>
                                         <div class="mt-2 pt-2 border-top">
                                             <p class="text-muted small mb-0">Jan 15, 2026</p>
@@ -279,7 +287,8 @@
                                     <div class="order-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-005</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#ORD-005</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Packaging Bundle</h6>
                                             </div>
                                         </div>
@@ -291,7 +300,8 @@
                                                     <small class="text-muted">Design phase - 2 days left</small>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                                            <button class="btn btn-sm btn-outline-primary"><i
+                                                    class="bi bi-eye"></i></button>
                                         </div>
                                         <div class="mt-2 pt-2 border-top">
                                             <p class="text-muted small mb-0">Jan 18, 2026</p>
@@ -302,7 +312,8 @@
                                     <div class="order-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#ORD-008</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#ORD-008</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Brand Strategy</h6>
                                             </div>
                                         </div>
@@ -314,7 +325,8 @@
                                                     <small class="text-muted">Awaiting payment confirmation</small>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i></button>
+                                            <button class="btn btn-sm btn-outline-primary"><i
+                                                    class="bi bi-eye"></i></button>
                                         </div>
                                         <div class="mt-2 pt-2 border-top">
                                             <p class="text-muted small mb-0">Jan 20, 2026</p>
@@ -329,7 +341,8 @@
                 <!-- Concerns Tab -->
                 <div class="tab-pane fade" id="concerns" role="tabpanel">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                        <div
+                            class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
                             <h5 class="fw-bold mb-0">My Concerns</h5>
                             <button class="btn btn-primary-custom btn-sm">Raise New Concern</button>
                         </div>
@@ -339,7 +352,8 @@
                                     <div class="concern-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#TCK-001</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#TCK-001</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Logo revision needed</h6>
                                             </div>
                                         </div>
@@ -348,7 +362,8 @@
                                                 <span class="badge bg-danger-subtle text-danger">High</span>
                                                 <span class="badge bg-success ms-2">Resolved</span>
                                             </div>
-                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                            <button class="btn btn-sm btn-link text-dark"><i
+                                                    class="bi bi-three-dots-vertical"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +371,8 @@
                                     <div class="concern-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#TCK-003</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#TCK-003</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Package delivery delay</h6>
                                             </div>
                                         </div>
@@ -365,7 +381,8 @@
                                                 <span class="badge bg-warning-subtle text-warning">Medium</span>
                                                 <span class="badge bg-info text-white ms-2">In Progress</span>
                                             </div>
-                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                            <button class="btn btn-sm btn-link text-dark"><i
+                                                    class="bi bi-three-dots-vertical"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +390,8 @@
                                     <div class="concern-card border rounded-3 p-3 h-100">
                                         <div class="d-flex justify-content-between align-items-start mb-3">
                                             <div>
-                                                <span class="badge bg-primary-subtle text-primary fw-bold">#TCK-005</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-bold">#TCK-005</span>
                                                 <h6 class="fw-bold mt-2 mb-1">Billing inquiry</h6>
                                             </div>
                                         </div>
@@ -382,7 +400,8 @@
                                                 <span class="badge bg-secondary-subtle text-secondary">Low</span>
                                                 <span class="badge bg-warning text-dark ms-2">Pending</span>
                                             </div>
-                                            <button class="btn btn-sm btn-link text-dark"><i class="bi bi-three-dots-vertical"></i></button>
+                                            <button class="btn btn-sm btn-link text-dark"><i
+                                                    class="bi bi-three-dots-vertical"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -393,7 +412,8 @@
 
                 <!-- Messages Tab -->
                 <div class="tab-pane fade" id="messages" role="tabpanel">
-                    <div class="row g-0 border rounded-3 overflow-hidden bg-white shadow-sm" style="height: calc(100vh - 250px);">
+                    <div class="row g-0 border rounded-3 overflow-hidden bg-white shadow-sm"
+                        style="height: calc(100vh - 250px);">
                         <!-- Message List -->
                         <div class="col-lg-4 border-end overflow-auto h-100">
                             <div class="p-3 border-bottom bg-light-custom">
@@ -406,7 +426,8 @@
                                         <small>10:30 AM</small>
                                     </div>
                                     <p class="mb-1 small fw-bold text-truncate">Your logo design is ready</p>
-                                    <p class="mb-0 small text-white-50 text-truncate">Hi John, we've completed your logo design...</p>
+                                    <p class="mb-0 small text-white-50 text-truncate">Hi John, we've completed your logo
+                                        design...</p>
                                 </a>
                                 <a href="#" class="list-group-item list-group-item-action py-3 border-bottom">
                                     <div class="d-flex w-100 justify-content-between mb-1">
@@ -424,7 +445,8 @@
                             <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
                                 <div>
                                     <h5 class="fw-bold mb-1">Your logo design is ready</h5>
-                                    <div class="text-muted small">From: <span class="fw-bold text-dark">BrandStudio Team</span></div>
+                                    <div class="text-muted small">From: <span class="fw-bold text-dark">BrandStudio
+                                            Team</span></div>
                                 </div>
                                 <div class="text-muted small">Jan 20, 2026, 10:30 AM</div>
                             </div>
@@ -437,11 +459,14 @@
                             </div>
 
                             <div class="p-3 border-top bg-white">
-                                <textarea class="form-control mb-3" rows="3" placeholder="Type your reply..."></textarea>
+                                <textarea class="form-control mb-3" rows="3"
+                                    placeholder="Type your reply..."></textarea>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="d-flex gap-2">
-                                        <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-paperclip"></i></button>
-                                        <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-image"></i></button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="bi bi-paperclip"></i></button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="bi bi-image"></i></button>
                                     </div>
                                     <button class="btn btn-primary-custom">Send Reply</button>
                                 </div>
@@ -486,11 +511,14 @@
                                             </div>
                                             <div class="col-12">
                                                 <label class="form-label">Address</label>
-                                                <textarea class="form-control" rows="3">123 Main St, City, State 12345</textarea>
+                                                <textarea class="form-control"
+                                                    rows="3">123 Main St, City, State 12345</textarea>
                                             </div>
                                             <div class="col-12">
-                                                <button type="submit" class="btn btn-primary-custom">Save Changes</button>
-                                                <button type="button" class="btn btn-outline-secondary ms-2">Cancel</button>
+                                                <button type="submit" class="btn btn-primary-custom">Save
+                                                    Changes</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-secondary ms-2">Cancel</button>
                                             </div>
                                         </div>
                                     </form>
