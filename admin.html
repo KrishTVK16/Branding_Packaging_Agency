@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="d-flex align-items-center gap-3">
-                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0">
+                    <button id="theme-toggle" class="btn btn-link text-dark p-0 border-0 theme-toggle">
                         <i class="bi bi-moon-fill fs-5"></i>
                     </button>
                     <div class="d-flex align-items-center text-decoration-none">
@@ -153,6 +153,89 @@
                         </div>
                     </div>
 
+                    <!-- Platform Analytics & Activity Feed -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-lg-8">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-header bg-white border-0 py-3 d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Platform Performance</h5>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-outline-secondary active">Weekly</button>
+                                        <button class="btn btn-outline-secondary">Monthly</button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row text-center mb-4">
+                                        <div class="col-6 border-end">
+                                            <p class="text-muted small mb-1">Weekly Revenue</p>
+                                            <h4 class="fw-bold text-dark">$12,450</h4>
+                                            <span class="text-success small fw-bold"><i class="bi bi-caret-up-fill"></i> +12%</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-muted small mb-1">New Signups</p>
+                                            <h4 class="fw-bold text-dark">48</h4>
+                                            <span class="text-success small fw-bold"><i class="bi bi-caret-up-fill"></i> +5%</span>
+                                        </div>
+                                    </div>
+                                    <!-- Simple Analytics Visualization -->
+                                    <div class="d-flex align-items-end gap-1" style="height: 120px;">
+                                        <div class="bg-primary-subtle flex-grow-1" style="height: 60%; border-radius: 4px 4px 0 0;"></div>
+                                        <div class="bg-primary flex-grow-1" style="height: 85%; border-radius: 4px 4px 0 0;"></div>
+                                        <div class="bg-primary-subtle flex-grow-1" style="height: 55%; border-radius: 4px 4px 0 0;"></div>
+                                        <div class="bg-primary flex-grow-1" style="height: 95%; border-radius: 4px 4px 0 0;"></div>
+                                        <div class="bg-primary-subtle flex-grow-1" style="height: 70%; border-radius: 4px 4px 0 0;"></div>
+                                        <div class="bg-primary flex-grow-1" style="height: 80%; border-radius: 4px 4px 0 0;"></div>
+                                        <div class="bg-primary flex-grow-1" style="height: 100%; border-radius: 4px 4px 0 0;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-header bg-white border-0 py-3">
+                                    <h5 class="fw-bold mb-0">Recent Activity</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item border-0 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-shape bg-success-subtle text-success me-3" style="width: 32px; height: 32px; font-size: 0.8rem;">
+                                                    <i class="bi bi-cart"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 small fw-bold">New Order #ORD-882</p>
+                                                    <small class="text-muted">2 mins ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item border-0 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-shape bg-primary-subtle text-primary me-3" style="width: 32px; height: 32px; font-size: 0.8rem;">
+                                                    <i class="bi bi-person-plus"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 small fw-bold">New Client Registered</p>
+                                                    <small class="text-muted">45 mins ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item border-0 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-shape bg-warning-subtle text-warning me-3" style="width: 32px; height: 32px; font-size: 0.8rem;">
+                                                    <i class="bi bi-chat-left-text"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 small fw-bold">Support Ticket #TCK-012</p>
+                                                    <small class="text-muted">3 hours ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Recent Orders -->
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white border-0 py-3">
@@ -226,6 +309,58 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Creative Team Load -->
+                    <div class="card border-0 shadow-sm mt-4">
+                        <div class="card-header bg-white border-0 py-3">
+                            <h5 class="fw-bold mb-0">Creative Team Availability</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="table-responsive">
+                                <table class="table table-borderless align-middle mb-0">
+                                    <thead class="text-muted small text-uppercase">
+                                        <tr>
+                                            <th>Team Name</th>
+                                            <th>Current Projects</th>
+                                            <th>Load Level</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="fw-bold text-dark">Branding Unit A</span></td>
+                                            <td>4/5</td>
+                                            <td>
+                                                <div class="progress" style="height: 6px; border-radius: 3px;">
+                                                    <div class="progress-bar bg-danger" style="width: 80%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-danger-subtle text-danger">At Capacity</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fw-bold text-dark">Packaging Studio</span></td>
+                                            <td>2/5</td>
+                                            <td>
+                                                <div class="progress" style="height: 6px; border-radius: 3px;">
+                                                    <div class="progress-bar bg-success" style="width: 40%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-success-subtle text-success">Available</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fw-bold text-dark">Strategy Team</span></td>
+                                            <td>3/5</td>
+                                            <td>
+                                                <div class="progress" style="height: 6px; border-radius: 3px;">
+                                                    <div class="progress-bar bg-warning" style="width: 60%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-warning-subtle text-warning">Limited</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

@@ -45,14 +45,14 @@
 [data-theme="dark"] {
     --color-body: #FAF7F2;
     /* Ivory */
-    --color-bg: #3A2A23;
-    /* Deep Brown */
-    --color-bg-secondary: #4A3A33;
-    /* Deep Brown Light */
+    --color-bg: #000000;
+    /* Black */
+    --color-bg-secondary: #121212;
+    /* Dark Gray */
     --color-border: #C4623A;
     /* Terracotta */
-    --color-card-bg: #4A3A33;
-    /* Deep Brown Light */
+    --color-card-bg: #121212;
+    /* Dark Gray */
     --color-heading: #FAF7F2;
     /* Ivory */
 }

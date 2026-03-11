@@ -25,14 +25,14 @@
 
 /* Dark Mode Colors */
 [data-theme="dark"] {
-    --bs-body-bg: var(--deep-brown);
+    --bs-body-bg: #000000;
     --bs-body-color: var(--ivory);
     --bs-primary: var(--terracotta);
     --bs-primary-dark: var(--terracotta-light);
     --bs-primary-light: var(--terracotta-dark);
     --bs-secondary: var(--ivory);
     --bs-secondary-dark: var(--ivory-light);
-    --bs-light: var(--deep-brown-light);
+    --bs-light: #121212;
     --bs-dark: var(--ivory);
 }
 
@@ -43,18 +43,18 @@
 }
 
 [data-theme="dark"] .card {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
     color: var(--ivory) !important;
 }
 
 [data-theme="dark"] .navbar {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-bottom: 1px solid var(--terracotta) !important;
 }
 
 [data-theme="dark"] .dropdown-menu {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
 }
 
@@ -68,24 +68,24 @@
 }
 
 [data-theme="dark"] .form-control {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
     color: var(--ivory) !important;
 }
 
 [data-theme="dark"] .form-control:focus {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
     color: var(--ivory) !important;
     box-shadow: 0 0 0 0.25rem rgba(196, 98, 58, 0.25) !important;
 }
 
 [data-theme="dark"] .bg-light-custom {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
 }
 
 [data-theme="dark"] header.bg-dark-custom {
-    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 50%, var(--deep-brown) 100%) !important;
+    background: linear-gradient(135deg, #000000 0%, #121212 50%, #000000 100%) !important;
 }
 
 /* Enhanced text visibility in dark mode */
@@ -113,7 +113,7 @@
 
 /* Service cards in dark mode */
 [data-theme="dark"] .service-card {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     color: var(--ivory) !important;
 }
 
@@ -128,7 +128,7 @@
 
 /* Footer in dark mode */
 [data-theme="dark"] footer {
-    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%) !important;
+    background: linear-gradient(135deg, #000000 0%, #121212 100%) !important;
 }
 
 /* Enhanced visibility for specific classes in dark mode */
@@ -152,23 +152,23 @@
 [data-theme="dark"] .bg-white,
 [data-theme="dark"] .bg-light,
 [data-theme="dark"] .card-inner.bg-white {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     color: var(--ivory) !important;
 }
 
 /* Force dark overlay for cards with inline white gradients */
 [data-theme="dark"] .card[style*="rgba(255,255,255,0.9)"] {
-    background-image: linear-gradient(rgba(74, 58, 51, 0.9), rgba(74, 58, 51, 0.9)) !important;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)) !important;
 }
 
 /* Accordion Dark Mode Fixes */
 [data-theme="dark"] .accordion-item {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
 }
 
 [data-theme="dark"] .accordion-button {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     color: var(--ivory) !important;
 }
 
@@ -186,7 +186,7 @@
 [data-theme="dark"] .bg-info-subtle,
 [data-theme="dark"] .bg-success-subtle,
 [data-theme="dark"] .bg-warning-subtle {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border: 1px solid var(--terracotta) !important;
     color: var(--ivory) !important;
 }
@@ -197,7 +197,7 @@
 }
 
 [data-theme="dark"] .form-select {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
     color: var(--ivory) !important;
 }
@@ -296,12 +296,12 @@ body {
 
 /* Header Styles */
 header.bg-dark-custom {
-    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%) !important;
+    background: linear-gradient(135deg, #000000 0%, #121212 100%) !important;
 }
 
 /* Footer Styles */
 footer {
-    background: var(--deep-brown) !important;
+    background: #000000 !important;
     color: var(--ivory) !important;
 }
 
@@ -475,7 +475,7 @@ footer .text-white-50 {
 
     /* Enhanced mobile dark mode */
     [data-theme="dark"] .card {
-        background-color: var(--deep-brown-light) !important;
+        background-color: #121212 !important;
         border: 1px solid var(--terracotta) !important;
     }
 
@@ -498,7 +498,7 @@ footer .text-white-50 {
 
 /* Industry Cards Dark Mode Fix */
 [data-theme="dark"] .bg-white {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
 }
 
 [data-theme="dark"] .bg-white .text-muted {

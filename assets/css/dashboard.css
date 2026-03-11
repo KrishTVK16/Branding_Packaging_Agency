@@ -51,7 +51,7 @@
 
 /* Admin specific sidebar styles */
 body[data-page="admin"] .sidebar {
-    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%);
+    background: linear-gradient(135deg, #000000 0%, #121212 100%);
     border-right: 1px solid var(--terracotta);
 }
 
@@ -86,7 +86,7 @@ body[data-page="admin"] .sidebar hr {
 
 /* User specific sidebar styles */
 body[data-page="user"] .sidebar {
-    background: linear-gradient(135deg, var(--deep-brown-light) 0%, var(--deep-brown) 100%);
+    background: linear-gradient(135deg, #121212 0%, #000000 100%);
     border-right: 1px solid var(--terracotta);
 }
 
@@ -404,12 +404,12 @@ body[data-page="user"] .sidebar hr {
 }
 
 [data-theme="dark"] .card {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
 }
 
 [data-theme="dark"] .card-header {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
 }
 
@@ -419,7 +419,7 @@ body[data-page="user"] .sidebar hr {
 }
 
 [data-theme="dark"] .form-control {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     color: var(--ivory) !important;
     border-color: var(--terracotta) !important;
 }
@@ -515,7 +515,7 @@ body[data-page="user"] .sidebar hr {
 
 /* Dark mode fixes for message interface */
 [data-theme="dark"] .list-group-item {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
     border-color: var(--terracotta) !important;
     color: var(--ivory) !important;
 }
@@ -567,11 +567,11 @@ body[data-page="user"] .sidebar hr {
 }
 
 [data-theme="dark"] .bg-light-custom {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
 }
 
 [data-theme="dark"] .bg-white {
-    background-color: var(--deep-brown-light) !important;
+    background-color: #121212 !important;
 }
 
 /* Dark mode fixes for message sender names and details */
@@ -652,13 +652,13 @@ body[data-page="user"] .sidebar hr {
 
 /* Dark mode admin sidebar */
 [data-theme="dark"][data-page="admin"] .sidebar {
-    background: linear-gradient(135deg, var(--deep-brown) 0%, var(--deep-brown-light) 100%) !important;
+    background: linear-gradient(135deg, #000000 0%, #121212 100%) !important;
     border-right-color: var(--terracotta) !important;
 }
 
 /* Dark mode user sidebar */
 [data-theme="dark"][data-page="user"] .sidebar {
-    background: linear-gradient(135deg, var(--deep-brown-light) 0%, var(--deep-brown) 100%) !important;
+    background: linear-gradient(135deg, #121212 0%, #000000 100%) !important;
     border-right-color: var(--terracotta) !important;
 }
 
